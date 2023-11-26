@@ -1,7 +1,16 @@
+/**color**/
+/**font family**/
+/**font size**/
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

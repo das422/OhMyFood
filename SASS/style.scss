@@ -1,5 +1,15 @@
+@import './utils/_variables';
+
 body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
+
+img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+
