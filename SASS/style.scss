@@ -1,8 +1,21 @@
 @import './base/base';
 @import './utils/variables';
 @import './utils/mixins';
-@import './base/reset.scss';
+
 
 .card-restaurant{
     @include border-style;
+}
+
+h1{
+    font-family: $font-title;
+}
+
+.location{
+    @include border-style;
+    width: 100%;
+    display: flex;
+    gap: 15px ;
+    justify-content: center;
+    align-items: center;        
 }
