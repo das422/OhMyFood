@@ -54,4 +54,38 @@ table {
 
 td, th {
   padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "shrikland", cursive;
+  width: 100%;
+}
+.header .header_logo {
+  border: 2px solid #F6F6F6;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  width: 100%;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 2px 5px 5px 0px #353535;
+  background-color: #EAEAEA;
+  flex-direction: row;
+  gap: 1em;
+  font-family: "Roboto", sans serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

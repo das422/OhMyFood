@@ -5,3 +5,31 @@
 @import './base/reset';
 
 
+.header{
+    @include flex-center;
+    flex-direction: column;
+    font-family: $font-title;
+    width: 100%;
+        .header_logo{
+            @include box-style;
+            @include flex-center;
+            border-radius: 0px;
+            width: 100%;
+            font-size: ($font-base*2);
+            font-weight: 700;
+            
+        }
+    
+
+}
+
+.location{
+    @include flex-center;
+    @include shadow;
+    flex-direction: row;
+    gap: 1em;
+    font-family: $font-txt;
+    font-weight: 500;
+    font-size: $font-base;
+    width: 100%;
+}

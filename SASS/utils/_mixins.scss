@@ -1,8 +1,22 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
 @mixin shadow{
-    box-shadow: 2px 5px 5px 0px;
+    box-shadow: inset 2px 5px 5px 0px #353535 ;
+    background-color: #EAEAEA;
 }
 
 @mixin box-style{
     border: 2px solid #F6F6F6;
     border-radius: 15px;
 }
+
