@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/c18642d287.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,22 +16,24 @@
     <!--header-->
     <header>
         <div class="logo-main">
-            <img class="logo-site" src="ASSETS/logo/ohmyfood.png" alt="logo du site">
+            <h1 class="logo-text">ohmyfood</h1>
         </div>    
     </header>
 
     <!--location-->
         <div class="location">
-            <div class="location-btn"></div>
-            <div class="city-search" >
+            <div class="location__btn">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="location__city" >
                 <p class="city">Paris, Belleville</p>
             </div>
         </div>
     <!--homepage-->
     <section class="hero">
-        <h1 class=" title hero__title">Réservez le menu qui vous convient</h1>
-        <p class="hero__subtitle">Découvrezdes restaurants d'exception, sélectionnés par vos soins</p>
-        <button class="btn hero__btn">Explorer nos restaurants</button>
+        <h2 class=" title hero__title">Réservez le menu qui vous convient</h2>
+        <p class="hero__subtitle">Découvrez des restaurants d'exception, sélectionnés par vos soins</p>
+        <button class="call-to-action__btn btn">Explorer nos restaurants</button>
     </section>
 
     <!--fonctionnement-->
@@ -39,17 +42,23 @@
         <ul class="notice-step">                
             <li class="notice-step__process">
                 <span class="nbr">1</span>
-                <span class="icon">tel</span>
+                <span class="notice__icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </span>
                 <p class="notice-step__text">Choisissez un restaurant</p>
             </li>
             <li class="notice-step__process">
                 <span class="nbr">2</span>
-                <span class="icon">list</span>
+                <span class="notice__icon">
+                    <i class="fa-solid fa-list-ul"></i>
+                </span>
                 <p class="notice-step__text">Composez votre menu</p>
             </li>
             <li class="notice-step__process">
                 <span class="nbr">3</span>
-            <span class="icon">house</span>
+                <span class="notice__icon">
+                    <i class="fa-solid fa-store"></i>
+                </span>
             <p class="notice-step__text">Dégustez au restaurant</p>
             </li> 
         </ul>
@@ -58,41 +67,49 @@
     <!--main content-->
     <section class="main-content">
         <h2 class="main-title">Restaurants</h2>
-        <article class="restaurant-card">
+        <div class="card-restaurant">
             <img class="img" src="ASSETS/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût img">
-            <h3 class="restaurant-title">La palette du goût</h3>
-            <p class="restaurant-subtitle">Ménilmontant</p>
-            <span class="icon-card">heart</span>
-        </article>
-        <article class="restaurant-card">
+            <div class="card-restaurant__content">
+                <h3 class="card-restaurant__title">La palette du goût</h3>
+                <p class="card_restaurant__subtitle">Ménilmontant</p>
+                <span class="icon-card">heart</span>
+            </div>
+        </div>
+        <div class="card-restaurant">
             <img class="img" src="ASSETS/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la palette du goût img">
-            <h3 class="restaurant-title">La note enchantée</h3>
-            <p class="restaurant-subtitle">Charonne</p>
-            <span class="icon-card">heart</span>
-        </article>
-        <article class="restaurant-card">
+            <div class="card-restaurant__content">
+                <h3 class="card-restaurant__title">La note enchantée</h3>
+                <p class="card_restaurant__subtitle">Charonne</p>
+                <span class="icon-card">heart</span>
+            </div>
+        </div>
+        <div class="card-restaurant">
             <img class="img" src="ASSETS/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="la palette du goût img">
-            <h3 class="restaurant-title">Â la française</h3>
-            <p class="restaurant-subtitle">Cité Rouge</p>
-            <span class="icon-card">heart</span>
-        </article>
-        <article class="restaurant-card">
+            <div class="card-restaurant__content">
+                <h3 class="card-restaurant__title">Â la française</h3>
+                <p class="card_restaurant__subtitle">Cité Rouge</p>
+                <span class="icon-card">heart</span>
+            </div>
+        </div>
+        <div class="card-restaurant">
             <img class="img" src="ASSETS/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="la palette du goût img">
-            <h3 class="restaurant-title">Le délice des sens</h3>
-            <p class="restaurant-subtitle">Folie-Méricourt</p>
-            <span class="icon-card">heart</span>
-        </article>
+            <div class="card-restaurant__content">
+                <h3 class="card-restaurant__title">Le délice des sens</h3>
+                <p class="card_restaurant__subtitle">Folie-Méricourt</p>
+                <span class="icon-card">heart</span>
+            </div>
+        </div>
     </section>
     </div>
 <main>
 
-<footer>
-    <img class="logo-site__footer" src="ASSETS/logo/ohmyfood.png" alt="logo du site">
-    <ul class="footer_item">
-        <li>Proposer un restaurant</li>
-        <li>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>
+<footer class="footer">
+    <h4 class="logo-text">ohmyfood</h4>
+    <ul class="footer_list">
+        <li class="footer__list--item">Proposer un restaurant</li>
+        <li class="footer__list--item">Devenir partenaire</li>
+        <li class="footer__list--item">Mentions légales</li>
+        <li class="footer__list--item" href="#serveur mail to">Contact</li>
     </ul>
 </footer>
     
