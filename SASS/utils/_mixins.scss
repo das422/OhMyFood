@@ -1,12 +1,21 @@
-@mixin border-style{
-    border-radius: 0.5em;
-    border: 2px solid gray;
-    background-color:gray;
+@mixin border{
+    border-radius: 15px;
+    border: 2px solid $background;
+    background-color:$background;
 }
 
-.wrapper{
+@mixin wrapper {
     max-width: 1440px;
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+@mixin card-style{
+    border-radius: 25px;
+
+}
+
+@mixin shadow{
+    box-shadow: 0px 4px 15px 0px ;
 }

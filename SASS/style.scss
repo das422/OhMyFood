@@ -1,21 +1,24 @@
-@import './base/base';
-@import './utils/variables';
-@import './utils/mixins';
+@use './base/base';
+@use './utils/variables';
+@use './utils/mixins';
+@use './utils/functions';
 
 
 .card-restaurant{
-    @include border-style;
+    @include border;
+    @include shadow;
 }
 
 h1{
     font-family: $font-title;
+    font-size: $size;
+    @include border;
 }
 
 .location{
-    @include border-style;
+    @include border;
     width: 100%;
     display: flex;
-    gap: 15px ;
     justify-content: center;
     align-items: center;        
 }
