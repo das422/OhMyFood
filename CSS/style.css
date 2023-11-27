@@ -1,6 +1,8 @@
 img {
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -9,12 +11,12 @@ Body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 1440px;
+  min-width: 320px;
 }
 
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
