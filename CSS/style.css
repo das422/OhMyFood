@@ -5,35 +5,53 @@ img {
   height: 100%;
 }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.wrapper {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  box-sizing: border-box;
 }
 
-.card-restaurant {
-  display: flex;
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
-.location {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 2px 5px 5px 0px;
-  border: 2px solid #F6F6F6;
-  border-radius: 15px;
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
 }
 
-.notice {
-  display: flex;
-  justify-content: center;
+ul {
+  list-style: none;
 }
 
-.logo-text {
-  font-size: 16px;
-  font-family: "shrikland", cursive;
+button, input, select {
+  margin: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */

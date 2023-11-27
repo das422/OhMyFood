@@ -2,28 +2,6 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/functions';
+@import './base/reset';
 
 
-.card-restaurant{
-    display: flex;
-}
-
-.location{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include shadow;  
-    @include box-style;     
-}
-
-.notice{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.logo-text{
-    font-size: $font-base;
-    font-family: $font-title;
-}
