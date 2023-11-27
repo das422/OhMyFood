@@ -1,4 +1,8 @@
 @import './base/base';
 @import './utils/variables';
 @import './utils/mixins';
+@import './base/reset.scss';
 
+.card-restaurant{
+    @include border-style;
+}
