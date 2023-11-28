@@ -8,9 +8,10 @@
 .header{
     @include flex-center;
     flex-direction: column;
+    height: toRem(113);
 
         .header__logo{
-            height: toRem(63);
+            height: 55%;
             width: 100%;
             @include flex-center;
             flex-direction: column;
@@ -22,10 +23,43 @@
             @include flex-center;
             gap: toRem(15);
             background-color: $background;
-            box-shadow: inset 1px 4px 12px -5px #353535;
-            height: toRem(50);
+            box-shadow: 1px 4px 12px -5px #353535;
+            height: 44%;
             width: 100%;
             @include main-font;
 
         }
+}
+
+.hero{
+    @include flex-center;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: toRem(15);
+
+        .hero__title{
+            @include main-font;
+            font-size: $size*1.5;
+            min-width: toRem(275);
+            max-height: toRem(68);
+            padding: 0px 20px;
+            text-align: center;                
+        }
+        .hero__subtitle{
+            min-width:toRem(275);
+            text-align: center;
+        }
+        .hero__btn{
+            border-radius: toRem(50);
+            border:none;
+            height: toRem(50);
+            width: toRem(200);
+            background: linear-gradient(to top, $primary-color, $secondary-color);  
+            color: #fff;
+
+            .hero__btn--txt{
+                @include main-font;
+            }
+        }  
+        
 }
