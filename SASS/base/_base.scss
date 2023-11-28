@@ -1,3 +1,7 @@
+:root{
+    background-color:#F6F6F6;
+}
+
 img{
     object-fit: cover;
     object-position: center;
@@ -10,5 +14,9 @@ img{
     margin: 0 auto;
     max-width: 1440px;
     box-sizing: border-box;
+}
+
+a{
+    color: inherit;
 }
 
