@@ -8,28 +8,24 @@
 .header{
     @include flex-center;
     flex-direction: column;
-    font-family: $font-title;
-    width: 100%;
-        .header_logo{
-            @include box-style;
-            @include flex-center;
-            border-radius: 0px;
+
+        .header__logo{
+            height: toRem(63);
             width: 100%;
-            font-size: ($font-base*2);
+            @include flex-center;
+            flex-direction: column;
+            font-family: $font-title;
             font-weight: 700;
-            
+            font-size: $size*2;
         }
-    
+        .header__location{
+            @include flex-center;
+            gap: toRem(15);
+            background-color: $background;
+            box-shadow: inset 1px 4px 12px -5px #353535;
+            height: toRem(50);
+            width: 100%;
+            @include main-font;
 
-}
-
-.location{
-    @include flex-center;
-    @include shadow;
-    flex-direction: row;
-    gap: 1em;
-    font-family: $font-txt;
-    font-weight: 500;
-    font-size: $font-base;
-    width: 100%;
+        }
 }

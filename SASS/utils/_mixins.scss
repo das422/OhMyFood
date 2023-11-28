@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+@mixin main-font{
+    font-family: $font-txt;
+    font-weight: 500;
+}
+
 
 
 
