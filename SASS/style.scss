@@ -7,6 +7,7 @@
 @import './layout/header';
 @import './components/btn.scss';
 @import './components/icon.scss';
+@import './components/new.scss';
 
 
 
@@ -135,6 +136,11 @@
     }
 
     
+}
+
+.__new{
+    background-color: green;
+    object-position: top;
 }
 
 .card-restaurant__content{

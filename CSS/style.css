@@ -161,6 +161,14 @@ header .header__location {
   font-size: 16px;
 }
 
+.__new {
+  position: absolute;
+  color: green;
+  border: 2px solid green;
+  top: 0.8rem;
+  right: 0.8rem;
+}
+
 /*hero*/
 .hero {
   display: flex;
@@ -277,6 +285,11 @@ header .header__location {
   height: 124px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.__new {
+  background-color: green;
+  object-position: top;
 }
 
 .card-restaurant__content {
