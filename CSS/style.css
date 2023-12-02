@@ -84,25 +84,25 @@ header .__logo {
   font-size: 32px;
   box-shadow: 2px 7px 10px 4px #353535;
 }
-header .arrow {
-  position: absolute;
-  top: 0.88rem;
-  left: 0.88rem;
-  cursor: pointer;
-  color: #353535;
-  display: none;
-}
 header .header__location {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans serif;
+  font-weight: 500;
   gap: 0.9375rem;
   background-color: #EAEAEA;
   opacity: 95%;
   height: 44%;
   width: 100%;
-  font-family: "Roboto", sans serif;
-  font-weight: 500;
+}
+
+.arrow {
+  position: absolute;
+  top: 0.88rem;
+  left: 0.88rem;
+  cursor: pointer;
+  color: #353535;
 }
 
 .icon::before {
@@ -116,6 +116,13 @@ header .header__location {
   content: "\f060";
   font-weight: 900;
   font-size: 30px;
+}
+
+.location-dot::before {
+  font: var(--fa-font-solid);
+  content: "\f3c5";
+  font-weight: 900;
+  font-size: 20px;
 }
 
 /*hero*/

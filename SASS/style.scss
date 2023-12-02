@@ -9,18 +9,6 @@
 
 
 
-.icon::before {
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .arrow::before {
-    font: var(--fa-font-solid);
-    content: "\f060";
-    font-weight: 900;
-    font-size: 30px;
-  }
 
 
 //hero//
