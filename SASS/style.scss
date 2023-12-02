@@ -7,6 +7,7 @@
 @import './layout/header';
 @import './components/btn.scss';
 @import './components/icon.scss';
+@import './components/new.scss';
 
 
 
@@ -137,6 +138,11 @@
     
 }
 
+.__new{
+    background-color: green;
+    object-position: top;
+}
+
 .card-restaurant__content{
     @include flex-center;
     justify-content: space-between;
@@ -173,7 +179,7 @@
     .logo-text{
         font-family: $font-title;
         font-weight: 400;
-        font-size: $size*1.5;
+        font-size: $size;
     }
 
     .footer__list{
@@ -185,5 +191,8 @@
         .footer__list--item{
             gap: toRem(7);
         }
+
+
+
     }
 }

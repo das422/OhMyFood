@@ -37,4 +37,11 @@
   content: "\f54e";
   font-weight: 900;
   font-size: 16px;
+}
+
+.handshake::before {
+  font: var(--fa-font-solid);
+  content: "\f4c4";
+  font-weight: 900;
+  font-size: 13px;
 }/*# sourceMappingURL=icon.css.map */
