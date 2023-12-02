@@ -70,10 +70,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 7.0625rem;
+  height: 100%;
 }
 header .__logo {
-  height: 55%;
+  height: 3.9375rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -82,7 +82,7 @@ header .__logo {
   font-family: "shrikhand", cursive;
   font-weight: 700;
   font-size: 32px;
-  box-shadow: 2px 7px 10px 4px #353535;
+  box-shadow: 0px 2px 4px 0px #353535;
 }
 header .header__location {
   display: flex;
@@ -92,8 +92,8 @@ header .header__location {
   font-weight: 500;
   gap: 0.9375rem;
   background-color: #EAEAEA;
-  opacity: 95%;
-  height: 44%;
+  opacity: 85%;
+  height: 3.125rem;
   width: 100%;
 }
 
@@ -103,6 +103,21 @@ header .header__location {
   left: 0.88rem;
   cursor: pointer;
   color: #353535;
+}
+
+.btn {
+  border-radius: 3.125rem;
+  border: none;
+  height: min-content;
+  width: fit-content;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  color: #fff;
+  cursor: pointer;
+}
+.btn .btn-txt {
+  font-family: "Roboto", sans serif;
+  font-weight: 500;
+  margin: 0.625rem;
 }
 
 .icon::before {
@@ -125,6 +140,27 @@ header .header__location {
   font-size: 20px;
 }
 
+.mobile-screen::before {
+  font: var(--fa-font-solid);
+  content: "\f3cd";
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.list--ul::before {
+  font: var(--fa-font-solid);
+  content: "\f0ca";
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.store::before {
+  font: var(--fa-font-solid);
+  content: "\f54e";
+  font-weight: 900;
+  font-size: 16px;
+}
+
 /*hero*/
 .hero {
   display: flex;
@@ -133,6 +169,7 @@ header .header__location {
   flex-direction: column;
   box-sizing: border-box;
   padding-bottom: 1.875rem;
+  width: 100%;
 }
 .hero .hero__title {
   font-family: "Roboto", sans serif;
@@ -147,21 +184,8 @@ header .header__location {
   text-align: center;
   padding-bottom: 1.6875rem;
 }
-.hero .hero__btn {
-  border-radius: 3.125rem;
-  border: none;
-  height: max-content;
-  width: max-content;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  color: #fff;
-  cursor: pointer;
-}
-.hero .hero__btn .hero__btn--txt {
-  font-family: "Roboto", sans serif;
-  font-weight: 500;
-  margin: 0.625rem;
-}
 
+/*fonctionnement*/
 .notice {
   display: flex;
   justify-content: center;
@@ -169,6 +193,7 @@ header .header__location {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 1.875rem;
+  margin-inline: 1.5625rem;
 }
 .notice .notice__title {
   font-family: "Roboto", sans serif;
@@ -192,13 +217,16 @@ header .header__location {
   gap: 0.9375rem;
   border-radius: 1.25rem;
   height: 4.375rem;
-  min-width: 16.5625rem;
+  min-width: 100%;
   box-shadow: 0px 4px 15px 0px #AEAEAE;
   background-color: #F6F6F6;
   cursor: pointer;
 }
 
-.notice-step__process:hover .notice__icon {
+.notice-step__process:hover {
+  color: #9356DC;
+}
+.notice-step__process:hover .mobile-screen .list--ul .store:hover {
   color: #9356DC;
 }
 
@@ -218,8 +246,12 @@ header .header__location {
   font-size: 0.875rem;
   position: relative;
   right: 0.6875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*restaurant*/
 .restaurant__main-content {
   display: flex;
   flex-direction: column;

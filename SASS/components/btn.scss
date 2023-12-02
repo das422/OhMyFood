@@ -1,0 +1,15 @@
+.btn{
+
+    border-radius: toRem(50);
+    border:none;
+    height: min-content;
+    width: fit-content;
+    background: linear-gradient(to top, $primary-color, $secondary-color);  
+    color: #fff;
+    cursor: pointer;
+        
+    .btn-txt{
+        @include main-font;
+        margin: toRem(10);
+    }
+    }  

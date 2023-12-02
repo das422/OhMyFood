@@ -5,6 +5,8 @@
 @import './base/reset';
 
 @import './layout/header';
+@import './components/btn.scss';
+@import './components/icon.scss';
 
 
 
@@ -18,6 +20,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding-bottom: toRem(30);
+    width: 100%;
 
         .hero__title{
             @include main-font;
@@ -31,29 +34,20 @@
             text-align: center;
             padding-bottom: toRem(27);
         }
-        .hero__btn{
-            border-radius: toRem(50);
-            border:none;
-            height: max-content;
-            width: max-content;
-            background: linear-gradient(to top, $primary-color, $secondary-color);  
-            color: #fff;
-            cursor: pointer;
 
-
-            .hero__btn--txt{
-                @include main-font;
-                margin: toRem(10);
-            }
-        }  
         
 }
 
+
+
+//fonctionnement//
+/*fonctionnement*/
 .notice{
     @include flex-center;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: toRem(30); 
+    padding-top: toRem(30);
+    margin-inline: toRem(25); 
         .notice__title{
             @include title-font;
             font-size: $size*1.5;
@@ -73,7 +67,7 @@
                 gap: toRem(15);
                 border-radius: toRem(20);
                 height: toRem(70);
-                min-width:toRem(265);
+                min-width:100%;
                 @include shadow-bx;
                 cursor: pointer
 
@@ -83,12 +77,15 @@
 }
 
 .notice-step__process:hover{
-    .notice__icon{
-       color: $primary-color; 
+       color: $primary-color;
+
+    & .mobile-screen .list--ul .store:hover{
+        color: $primary-color;
     }
 
-    
-    
+
+       
+
 }
 
 .notice-step__text{
@@ -106,8 +103,12 @@
     font-size: toRem(14);
     position: relative;
     right: toRem(11);
+    @include flex-center;
 }
 
+
+//restaurant//
+/*restaurant*/
 .restaurant__main-content{
     display: flex;
     flex-direction: column;

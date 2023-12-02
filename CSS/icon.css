@@ -1,0 +1,40 @@
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.arrow::before {
+  font: var(--fa-font-solid);
+  content: "\f060";
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.location-dot::before {
+  font: var(--fa-font-solid);
+  content: "\f3c5";
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.mobile-screen::before {
+  font: var(--fa-font-solid);
+  content: "\f3cd";
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.list--ul::before {
+  font: var(--fa-font-solid);
+  content: "\f0ca";
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.store::before {
+  font: var(--fa-font-solid);
+  content: "\f54e";
+  font-weight: 900;
+  font-size: 16px;
+}/*# sourceMappingURL=icon.css.map */
