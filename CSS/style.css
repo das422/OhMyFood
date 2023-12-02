@@ -64,14 +64,15 @@ td, th {
   padding: 0;
 }
 
-.header {
+/**header**/
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 7.0625rem;
 }
-.header .header__logo {
+header .__logo {
   height: 55%;
   width: 100%;
   display: flex;
@@ -81,20 +82,43 @@ td, th {
   font-family: "shrikhand", cursive;
   font-weight: 700;
   font-size: 32px;
+  box-shadow: 2px 7px 10px 4px #353535;
 }
-.header .header__location {
+header .arrow {
+  position: absolute;
+  top: 0.88rem;
+  left: 0.88rem;
+  cursor: pointer;
+  color: #353535;
+  display: none;
+}
+header .header__location {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.9375rem;
   background-color: #EAEAEA;
-  box-shadow: 1px 4px 12px -5px #353535;
+  opacity: 95%;
   height: 44%;
   width: 100%;
   font-family: "Roboto", sans serif;
   font-weight: 500;
 }
 
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.arrow::before {
+  font: var(--fa-font-solid);
+  content: "\f060";
+  font-weight: 900;
+  font-size: 30px;
+}
+
+/*hero*/
 .hero {
   display: flex;
   justify-content: center;

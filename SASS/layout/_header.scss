@@ -1,0 +1,40 @@
+//header//
+/**header**/
+header{
+    @include flex-center;
+    flex-direction: column;
+    height: toRem(113);
+
+
+        .__logo{
+            height: 55%;
+            width: 100%;
+            @include flex-center;
+            flex-direction: column;
+            font-family: $font-title;
+            font-weight: 700;
+            font-size: $size*2;
+            box-shadow: 2px 7px 10px 4px #353535;
+        }
+        .arrow{
+
+            position: absolute;
+            top: 0.88rem;
+            left: 0.88rem;
+            cursor: pointer;
+            color: #353535;
+            display: none;
+
+
+        }
+        .header__location{
+            @include flex-center;
+            gap: toRem(15);
+            background-color: $background;
+            opacity: 95%;
+            height: 44%;
+            width: 100%;
+            @include main-font;
+
+        }
+}

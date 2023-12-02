@@ -4,33 +4,27 @@
 @import './utils/functions';
 @import './base/reset';
 
+@import './layout/header';
 
-.header{
-    @include flex-center;
-    flex-direction: column;
-    height: toRem(113);
 
-        .header__logo{
-            height: 55%;
-            width: 100%;
-            @include flex-center;
-            flex-direction: column;
-            font-family: $font-title;
-            font-weight: 700;
-            font-size: $size*2;
-        }
-        .header__location{
-            @include flex-center;
-            gap: toRem(15);
-            background-color: $background;
-            box-shadow: 1px 4px 12px -5px #353535;
-            height: 44%;
-            width: 100%;
-            @include main-font;
 
-        }
-}
 
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .arrow::before {
+    font: var(--fa-font-solid);
+    content: "\f060";
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+
+//hero//
+/*hero*/
 .hero{
     @include flex-center;
     flex-direction: column;
