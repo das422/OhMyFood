@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["..\\SASS\\components\\new.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACD;EACC;EACA;EACA;EACA","sourcesContent":[".__new{\r\n    position: absolute;\r\n    color: green;\r\n   border: 2px solid green;\r\n    top: 0.8rem;\r\n    right: 0.8rem;\r\n    width: 100%;\r\n    height: 100%;\r\n}"]}
