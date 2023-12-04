@@ -8,11 +8,7 @@
 @import './components/btn.scss';
 @import './components/icon.scss';
 @import './components/new.scss';
-
-
-
-
-
+@import '../SASS/page/restaurants';
 
 
 //hero//
@@ -160,7 +156,7 @@
     .card-restaurant__icon{
         cursor: pointer;
         @include flex-center;
-         
+
         & :hover::before{
             color: transparent;
         }
@@ -169,6 +165,11 @@
                 color: $primary-color;
                 font-weight: 900;
                 opacity: 1;
+
+
+               
+                
+                
         }
 
     }
@@ -206,3 +207,4 @@
 
     }
 }
+
