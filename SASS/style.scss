@@ -202,9 +202,11 @@
         .footer__list--item{
             gap: toRem(7);
         }
+        
 
 
-
-    }
+ .footer__list--item{
+    @include flex-center;
+ }   }
 }
 

@@ -416,4 +416,9 @@ header .header__location {
 }
 .footer .footer__list .footer__list--item {
   gap: 0.4375rem;
+}
+.footer .footer__list .footer__list--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
