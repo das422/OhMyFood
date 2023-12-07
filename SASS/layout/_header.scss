@@ -15,6 +15,7 @@ header{
             font-weight: 700;
             font-size: $size*2;
             box-shadow: 0px 2px 4px 0px #353535;
+            position: relative;
         }
       
         .header__location{
@@ -34,7 +35,6 @@ header{
 .arrow{
 
     position: absolute;
-    top: 0.88rem;
     left: 0.88rem;
     cursor: pointer;
     color: #353535;

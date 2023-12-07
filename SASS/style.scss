@@ -154,23 +154,9 @@
         font-weight: 300;
     }
     .card-restaurant__icon{
-        cursor: pointer;
+
         @include flex-center;
 
-        & :hover::before{
-            color: transparent;
-        }
-        & :hover::after{
-                content: '\f004';
-                color: $primary-color;
-                font-weight: 900;
-                opacity: 1;
-
-
-               
-                
-                
-        }
 
     }
 }

@@ -84,6 +84,7 @@ header .__logo {
   font-weight: 700;
   font-size: 32px;
   box-shadow: 0px 2px 4px 0px #353535;
+  position: relative;
 }
 header .header__location {
   display: flex;
@@ -100,7 +101,6 @@ header .header__location {
 
 .arrow {
   position: absolute;
-  top: 0.88rem;
   left: 0.88rem;
   cursor: pointer;
   color: #353535;
@@ -156,6 +156,21 @@ header .header__location {
   font-size: 16px;
 }
 
+.heart::before {
+  font: var(--fa-font-regular);
+  content: "\f004";
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+}
+
+.heart::after {
+  font: var(--fa-font-solid);
+  content: "\f004";
+  font-weight: 900;
+  font-size: 16px;
+}
+
 .handshake::before {
   font: var(--fa-font-solid);
   content: "\f4c4";
@@ -170,66 +185,6 @@ header .header__location {
   top: 0.8rem;
   right: 0.8rem;
   display: none;
-}
-
-.banner {
-  object-position: center;
-  object-fit: cover;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-sizing: border-box;
-}
-.banner img {
-  height: 373px;
-}
-
-.menu__main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 2px solid #F6F6F6;
-  border-radius: 15px;
-  background: #d6d6d4;
-  border-radius: 25px;
-  top: -5em;
-  gap: 40px;
-  position: relative;
-}
-.menu__main .title-main {
-  font-family: "Roboto", sans serif;
-  font-weight: 700;
-  font-family: "shrikhand", cursive;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 50px;
-  font-size: 28px;
-}
-
-.menu-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #d6d6d4;
-  gap: 12px;
-  width: 635px;
-}
-.menu-box .menu-box__item {
-  border: 2px solid #F6F6F6;
-  border-radius: 15px;
-  width: 100%;
-  background: #F6F6F6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 69px;
-  width: 100%;
 }
 
 /*hero*/
@@ -372,19 +327,9 @@ header .header__location {
   font-weight: 300;
 }
 .card-restaurant__content .card-restaurant__icon {
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.card-restaurant__content .card-restaurant__icon :hover::before {
-  color: transparent;
-}
-.card-restaurant__content .card-restaurant__icon :hover::after {
-  content: "\f004";
-  color: #9356DC;
-  font-weight: 900;
-  opacity: 1;
 }
 
 .footer {
