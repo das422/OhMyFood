@@ -187,66 +187,6 @@ header .header__location {
   display: none;
 }
 
-.banner {
-  object-position: center;
-  object-fit: cover;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-sizing: border-box;
-}
-.banner img {
-  height: 373px;
-}
-
-.menu__main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 2px solid #F6F6F6;
-  border-radius: 15px;
-  background: #d6d6d4;
-  border-radius: 25px;
-  top: -5em;
-  gap: 40px;
-  position: relative;
-}
-.menu__main .title-main {
-  font-family: "Roboto", sans serif;
-  font-weight: 700;
-  font-family: "shrikhand", cursive;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 50px;
-  font-size: 28px;
-}
-
-.menu-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #d6d6d4;
-  gap: 12px;
-  width: 635px;
-}
-.menu-box .menu-box__item {
-  border: 2px solid #F6F6F6;
-  border-radius: 15px;
-  width: 100%;
-  background: #F6F6F6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 69px;
-  width: 100%;
-}
-
 /*hero*/
 .hero {
   display: flex;

@@ -4,27 +4,14 @@
     align-items: center;
 }
 
-@mixin main-font{
-    font-family: $font-txt;
-    font-weight: 500;
-}
 
-@mixin title-font{
-    font-family: $font-txt;
-    font-weight: 700;
-}
-
-@mixin title{
-    font-family: $font-title;
-    font-weight: 700;
-}
 
 
 
 
 
 @mixin shadow{
-    box-shadow: inset 2px 5px 5px 0px #F6F6F6 ;
+    box-shadow: outset 2px 5px 5px 0px #F6F6F6 ;
     background-color: #EAEAEA;
 }
 
