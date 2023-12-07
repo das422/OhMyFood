@@ -40,6 +40,26 @@
 
 }
 
+
+
+.heart::before {
+    font: var(--fa-font-regular);
+    content: "\f004";
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+
+}
+.heart::after{
+    font: var(--fa-font-solid);
+    content: "\f004";
+    font-weight: 900;
+    font-size: 16px;
+    
+
+}
+
+
 .handshake::before{
     font: var(--fa-font-solid);
     content: "\f4c4";

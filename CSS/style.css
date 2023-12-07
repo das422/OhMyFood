@@ -84,6 +84,7 @@ header .__logo {
   font-weight: 700;
   font-size: 32px;
   box-shadow: 0px 2px 4px 0px #353535;
+  position: relative;
 }
 header .header__location {
   display: flex;
@@ -100,7 +101,6 @@ header .header__location {
 
 .arrow {
   position: absolute;
-  top: 0.88rem;
   left: 0.88rem;
   cursor: pointer;
   color: #353535;
@@ -156,6 +156,21 @@ header .header__location {
   font-size: 16px;
 }
 
+.heart::before {
+  font: var(--fa-font-regular);
+  content: "\f004";
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+}
+
+.heart::after {
+  font: var(--fa-font-solid);
+  content: "\f004";
+  font-weight: 900;
+  font-size: 16px;
+}
+
 .handshake::before {
   font: var(--fa-font-solid);
   content: "\f4c4";
@@ -197,21 +212,18 @@ header .header__location {
   border-radius: 25px;
   top: -5em;
   gap: 40px;
-  width: min(100%, 75rem);
-  border: none;
-  margin-inline: auto;
   position: relative;
 }
 .menu__main .title-main {
   font-family: "Roboto", sans serif;
   font-weight: 700;
   font-family: "shrikhand", cursive;
-  font-size: clamp(1rem, 3vw, 3rem);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   margin-top: 50px;
+  font-size: 28px;
 }
 
 .menu-box {
@@ -220,24 +232,19 @@ header .header__location {
   align-items: center;
   flex-direction: column;
   background: #d6d6d4;
-  width: 100%;
   gap: 12px;
+  width: 635px;
 }
 .menu-box .menu-box__item {
   border: 2px solid #F6F6F6;
   border-radius: 15px;
+  width: 100%;
   background: #F6F6F6;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 69px;
-}
-.menu-box .menu-box__item-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-inline: 15px;
+  width: 100%;
 }
 
 /*hero*/
@@ -380,19 +387,9 @@ header .header__location {
   font-weight: 300;
 }
 .card-restaurant__content .card-restaurant__icon {
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.card-restaurant__content .card-restaurant__icon :hover::before {
-  color: transparent;
-}
-.card-restaurant__content .card-restaurant__icon :hover::after {
-  content: "\f004";
-  color: #9356DC;
-  font-weight: 900;
-  opacity: 1;
 }
 
 .footer {
@@ -424,4 +421,9 @@ header .header__location {
 }
 .footer .footer__list .footer__list--item {
   gap: 0.4375rem;
+}
+.footer .footer__list .footer__list--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

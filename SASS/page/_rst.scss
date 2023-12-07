@@ -1,0 +1,88 @@
+.wrapper {
+    position: relative;
+}
+
+.img_container {
+    background-color: lightcyan;
+    max-height: 275px;
+
+    .img-restaurant {
+        height: 275px;
+    }
+}
+
+.main-content {
+    background-color: lightcoral;
+    @include flex-center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    @include box-style;
+    border: none;
+    position: absolute;
+
+
+}
+
+.main_title {
+    @include title;
+    font-size: 28px;
+
+}
+
+.dish-container {
+    @include flex-center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    background-color: lightsalmon;
+    width: 100%;
+
+
+    .course-title {
+        @include title-font;
+    }
+
+}
+
+
+.dish-card {
+    @include box-style;
+    @include shadow-bx;
+    width: 100%;
+    height: 69px;
+    border: none;
+    cursor: pointer;
+}
+
+.dish__content {
+    @include flex-center;
+    justify-content: space-between;
+    gap: toRem(5);
+    padding-inline: toRem(12);
+    margin-bottom: toRem(12);
+    position: relative;
+
+    .dish__title {
+        @include title-font;
+    }
+
+    .dish__subtitle {
+        @include main-font;
+        font-weight: 300;
+    }
+
+    .card-restaurant__icon {
+
+        @include flex-center;
+
+
+    }
+
+    .price {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+}
