@@ -8,6 +8,7 @@ bottom: 0;
 left: 0;
 right: 0;
 box-sizing: border-box;
+
  
 
 img{
@@ -24,16 +25,20 @@ background: #d6d6d4;
 border-radius: 25px;
 top: -5em;
 gap: 40px;
+width: min(100%, 75rem);
+border: none;
+margin-inline: auto;
 
 position: relative;
     
     .title-main{
         @include title-font;
         font-family: $font-title;
+        font-size: clamp(1rem, 3vw, 3rem);
         @include flex-center;
         gap: 15px;
         margin-top: 50px;
-        font-size: 28px;
+
  }
 }
 
@@ -42,9 +47,9 @@ position: relative;
     @include flex-center;
     flex-direction: column;
     background: #d6d6d4;
-
+width: 100%;
     gap: 12px;
-    width: 635px;
+
     
     
     
@@ -52,10 +57,17 @@ position: relative;
 
     .menu-box__item{
         @include box-style;
-        width: 100%;
+
         background: #F6F6F6;
         @include flex-center;
         height: 69px;
-        width: 100%;
+ 
+        
+    }
+    .menu-box__item-description{
+        @include flex-center;
+        flex-direction: column;
+        margin-inline: 15px;
+
     }
 }

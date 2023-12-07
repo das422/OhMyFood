@@ -197,18 +197,21 @@ header .header__location {
   border-radius: 25px;
   top: -5em;
   gap: 40px;
+  width: min(100%, 75rem);
+  border: none;
+  margin-inline: auto;
   position: relative;
 }
 .menu__main .title-main {
   font-family: "Roboto", sans serif;
   font-weight: 700;
   font-family: "shrikhand", cursive;
+  font-size: clamp(1rem, 3vw, 3rem);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   margin-top: 50px;
-  font-size: 28px;
 }
 
 .menu-box {
@@ -217,19 +220,24 @@ header .header__location {
   align-items: center;
   flex-direction: column;
   background: #d6d6d4;
+  width: 100%;
   gap: 12px;
-  width: 635px;
 }
 .menu-box .menu-box__item {
   border: 2px solid #F6F6F6;
   border-radius: 15px;
-  width: 100%;
   background: #F6F6F6;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 69px;
-  width: 100%;
+}
+.menu-box .menu-box__item-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: 15px;
 }
 
 /*hero*/
