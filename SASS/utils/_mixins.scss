@@ -1,14 +1,9 @@
-@mixin flex-center{
+
+@mixin flex-cnter{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
-
 
 @mixin shadow{
     box-shadow: outset 2px 5px 5px 0px #F6F6F6 ;

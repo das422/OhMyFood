@@ -10,6 +10,14 @@ html{
     scroll-behavior: smooth;
 }
 
+.wrapper{
+    padding: 0;
+    margin-inline: auto;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+
 h1{
     font-family: $font-title;
     font-weight: 700;
@@ -46,12 +54,6 @@ img{
     height: 100%;
 }
 
-.wrapper{
-    padding: 0;
-margin-inline: auto;
-    max-width: 1440px;
-    box-sizing: border-box;
-}
 
 
 
