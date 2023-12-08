@@ -6,32 +6,49 @@ html {
   font-size: 16px;
   font-family: "Roboto", sans serif;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 0;
+  margin-inline: auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+  border: 2px solid red;
 }
 
 h1 {
   font-family: "shrikhand", cursive;
   font-weight: 700;
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
 }
 
 h2 {
   font-weight: 500;
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 2.5rem);
 }
 
 h3 {
   font-weight: 500;
+  font-size: clamp(1.1rem, 1.5vw + 0.5rem, 1.8rem);
 }
 
 h4 {
   font-weight: 500;
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
 }
 
 p {
   font-weight: 500;
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.6rem);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-size: clamp(1.3rem, 2vw, 0.8rem);
 }
 
 li {
@@ -45,21 +62,7 @@ img {
   height: 100%;
 }
 
-.wrapper {
-  padding: 0;
-  margin-inline: auto;
-  max-width: 1440px;
-  box-sizing: border-box;
-}
-
 /**header**/
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-}
 header .__logo {
   height: 3.9375rem;
   width: 100%;
@@ -91,8 +94,7 @@ header .header__location {
 .btn {
   border-radius: 3.125rem;
   border: none;
-  height: min-content;
-  width: fit-content;
+  height: 49px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   color: #fff;
   cursor: pointer;
@@ -160,55 +162,27 @@ header .header__location {
 
 .__new {
   position: absolute;
-  color: green;
-  border: 2px solid green;
+  color: #008766;
+  background-color: #99E2D0;
   top: 0.8rem;
   right: 0.8rem;
-  display: none;
+  cursor: default;
+  border-radius: 5px;
+  font-size: 0.88rem;
+  padding: 0.4rem;
 }
 
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-ul {
-  list-style: none;
 }
 
 button, input, select {
   margin: 0;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *, *::before, *::after {
   box-sizing: inherit;
-}
-
-img, video {
-  height: auto;
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td, th {
-  padding: 0;
 }
 
 /*hero*/
@@ -218,18 +192,20 @@ td, th {
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  padding-bottom: 1.875rem;
-  width: 100%;
+  margin-block: 3rem;
 }
 .hero .hero__title {
-  min-width: 17.1875rem;
-  padding: 30px 20px 15px 20px;
+  margin-inline-start: 2.5rem;
+  margin-inline-end: 3.5rem;
+  margin-bottom: 0.8rem;
   text-align: center;
 }
 .hero .hero__subtitle {
-  min-width: 17.1875rem;
   text-align: center;
-  padding-bottom: 1.6875rem;
+  font-weight: 400;
+  margin-inline-start: 2rem;
+  margin-inline-end: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 /*fonctionnement*/
@@ -239,7 +215,6 @@ td, th {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 1.875rem;
   margin-inline: 1.5625rem;
 }
 .notice .notice__title {
@@ -274,10 +249,6 @@ td, th {
   color: #9356DC;
 }
 
-.notice-step__text {
-  font-size: 0.875rem;
-}
-
 .notice-step__nbr {
   border-radius: 1.5625rem;
   background-color: #9356DC;
@@ -285,7 +256,6 @@ td, th {
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
-  font-size: 0.875rem;
   position: relative;
   right: 0.6875rem;
   display: flex;
@@ -311,13 +281,13 @@ td, th {
   width: auto;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 .card-restaurant .img {
   border: none;
   height: 124px;
   border-top-left-radius: 0.9375rem;
   border-top-right-radius: 0.9375rem;
-  width: 100%;
 }
 
 .card-restaurant__content {
@@ -334,6 +304,9 @@ td, th {
   justify-content: center;
   align-items: center;
 }
+.card-restaurant__content .card_restaurant__subtitle {
+  font-weight: 300;
+}
 
 .footer {
   display: flex;
@@ -344,7 +317,6 @@ td, th {
   padding: 22px 25px;
   background-color: #353535;
   color: white;
-  width: 100%;
   box-sizing: border-box;
   gap: 0.3125rem;
 }

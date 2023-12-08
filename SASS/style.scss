@@ -7,6 +7,7 @@
 @import './components/icon.scss';
 @import './components/new.scss';
 @import '../SASS/page/restaurants';
+@import './base/reset';
 
 //hero//
 /*hero*/
@@ -14,20 +15,21 @@
     @include flex-center;
     flex-direction: column;
     box-sizing: border-box;
-    padding-bottom: toRem(30);
-    width: 100%;
+    margin-block: 3rem;
 
         .hero__title{
 
-
-            min-width: toRem(275);
-            padding: 30px 20px 15px 20px;
+            margin-inline-start: 2.5rem;
+            margin-inline-end: 3.5rem;
+            margin-bottom: 0.8rem;
             text-align: center;                
         }
         .hero__subtitle{
-            min-width:toRem(275);
             text-align: center;
-            padding-bottom: toRem(27);
+            font-weight: 400;
+            margin-inline-start: 2rem;
+            margin-inline-end: 1.6rem;
+            margin-bottom: 2rem;
         }
 
         
@@ -41,7 +43,6 @@
     @include flex-center;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: toRem(30);
     margin-inline: toRem(25); 
         .notice__title{
 
@@ -82,10 +83,6 @@
 
 }
 
-.notice-step__text{
-
-    font-size:toRem(14);
-}
 
 .notice-step__nbr{
     border-radius: toRem(25);
@@ -94,7 +91,6 @@
     width: toRem(24);
     height: toRem(24);
     text-align: center;
-    font-size: toRem(14);
     position: relative;
     right: toRem(11);
     @include flex-center;
@@ -119,13 +115,14 @@
     width: auto;
     border: none;
     cursor: pointer;
+    position: relative;
 
     .img{
         border: none;
-        height: 124px;
+        height:min(124px, 231px);
         border-top-left-radius: toRem(15);
         border-top-right-radius: toRem(15);
-        width: 100%;
+
     }
 
     
@@ -144,6 +141,10 @@
 
 
     }
+
+    .card_restaurant__subtitle{
+        font-weight: 300;
+    }
 }
  
 
@@ -154,7 +155,6 @@
     padding: 22px 25px;
     background-color: #353535;
     color: white;
-    width: 100%;
     box-sizing: border-box;
     gap: toRem(5);
 
