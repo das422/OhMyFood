@@ -1,6 +1,8 @@
+@import '../utils/variables';
 :root{
     background-color:#F6F6F6;
 }
+
 
 html{
     font-size: $font-size-base;
@@ -10,7 +12,7 @@ html{
 
 h1{
     font-family: $font-title;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h2{
@@ -46,7 +48,7 @@ img{
 
 .wrapper{
     padding: 0;
-    margin: 0 auto;
+margin-inline: auto;
     max-width: 1440px;
     box-sizing: border-box;
 }

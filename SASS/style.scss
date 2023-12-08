@@ -2,13 +2,12 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/functions';
-@import './base/reset';
 @import './layout/header';
 @import './components/btn.scss';
 @import './components/icon.scss';
 @import './components/new.scss';
 @import '../SASS/page/restaurants';
-
+@import './base/reset';
 
 //hero//
 /*hero*/
@@ -47,7 +46,6 @@
     margin-inline: toRem(25); 
         .notice__title{
 
-            font-size: $size*1.5;
             padding-bottom: toRem(26);
             
         }
@@ -162,7 +160,7 @@
     gap: toRem(5);
 
     .logo-text{
-
+        font-family: $font-title;
         font-weight: 400;
 
     }
