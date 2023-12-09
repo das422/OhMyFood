@@ -66,6 +66,7 @@ img {
 .euro {
   content: "/U+020AC/";
   font-weight: 400;
+  font-size: clamp(0.8rem, 1.5vw + 0.8rem, 1.6rem);
 }
 
 /**header**/
