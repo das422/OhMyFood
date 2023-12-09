@@ -42,7 +42,7 @@ h4 {
 }
 
 p {
-  font-weight: 500;
+  font-weight: 300;
   font-size: clamp(0.8rem, 1.5vw + 0.8rem, 1.6rem);
 }
 
@@ -148,7 +148,6 @@ header .header__location {
   font: var(--fa-font-regular);
   content: "\f004";
   font-weight: 400;
-  font-size: 16px;
   position: absolute;
 }
 
@@ -156,7 +155,7 @@ header .header__location {
   font: var(--fa-font-solid);
   content: "\f004";
   font-weight: 900;
-  font-size: 16px;
+  opacity: 1;
 }
 
 .handshake::before {
@@ -351,7 +350,6 @@ button, input, select {
   gap: 1.125rem;
   margin-inline: 1.125rem;
   padding: 60px 0px;
-  height: auto;
 }
 
 .card-restaurant {
