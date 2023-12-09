@@ -1,0 +1,62 @@
+
+.img_restaurant{
+    height: min(100%, 300px);
+}
+
+
+.main-content {
+    @include flex-center;
+    flex-direction: column;
+    gap: 40px;
+    @include box-style;
+    border: none;
+    background-color: lightseagreen;
+    width:min(100% , 1066px);
+    top: 2rem;
+}
+
+
+
+
+
+.dish-container {
+    @include flex-center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    background-color: lightsalmon;
+
+
+}
+
+
+.dish-card {
+    @include box-style;
+    @include shadow-bx;
+    border: none;
+    cursor: pointer;
+}
+
+.dish__content {
+    @include flex-center;
+    justify-content: space-between;
+    gap: toRem(5);
+    padding-inline: toRem(12);
+    margin-bottom: toRem(12);
+    position: relative;
+
+
+    .card-restaurant__icon {
+
+        @include flex-center;
+
+
+    }
+
+    .price {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+}
