@@ -1,18 +1,44 @@
 
-.img_restaurant{
-    height: min(100%, 300px);
+
+
+.img_container{
+    height: clamp(275px, 15vw, 1200px);
+    overflow: hidden;
+
+    .img-restaurant{
+
+    object-position: 55% 61%;    
+    }
+
 }
 
 
 .main-content {
-    @include flex-center;
+   // @include flex-center;
     flex-direction: column;
     gap: 40px;
     @include box-style;
     border: none;
-    background-color: lightseagreen;
+    background-color: #e6e3e3;
     width:min(100% , 1066px);
-    top: 2rem;
+    transform: translateY(-3rem);
+    border-radius:3rem;
+    margin: 0 auto;
+
+    padding: 1rem;
+    display: grid;
+
+
+    .main_title{
+        @include flex-center;
+        gap: 2rem;
+
+    
+
+
+    }
+
+
 }
 
 
@@ -20,11 +46,20 @@
 
 
 .dish-container {
-    @include flex-center;
+   // @include flex-center; 
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
-    background-color: lightsalmon;
+
+
+    display: grid;
+
+    .green-bar{
+        height: 5px;
+        width: clamp(4rem, 3vw, 5rem);
+        background-color:$tertiary-color;
+        display: block;
+    }
 
 
 }
@@ -44,6 +79,9 @@
     padding-inline: toRem(12);
     margin-bottom: toRem(12);
     position: relative;
+    margin-inline: 0.2rem;
+    margin-block: 0.8rem;
+
 
 
     .card-restaurant__icon {
