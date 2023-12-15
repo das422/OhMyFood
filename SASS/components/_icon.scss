@@ -85,13 +85,14 @@
 
 
 
+
   }
   
   
   .heart .fa-solid:hover {
     opacity: 1;
 
-    & :active{
+    & :hover:active{
         opacity:1;
     }
   }

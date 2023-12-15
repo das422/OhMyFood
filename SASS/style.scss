@@ -11,6 +11,8 @@
 
 //hero//
 /*hero*/
+
+
 .hero {
     @include flex-center;
     flex-direction: column;
@@ -33,6 +35,10 @@
     }
 
 
+}
+
+.notice-step__text{
+    font-weight: 700;
 }
 
 //fonctionnement
