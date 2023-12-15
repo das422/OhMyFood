@@ -70,7 +70,21 @@
     @include shadow-bx;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+
 }
+
+
+    .checkbox{
+        background-color: green;
+        width: 49px;
+
+        
+    }
+
 
 .dish__content {
     @include flex-center;
@@ -81,20 +95,26 @@
     position: relative;
     margin-inline: 0.2rem;
     margin-block: 0.8rem;
-
-
+    width: 100%;
 
     .card-restaurant__icon {
-
         @include flex-center;
 
-
     }
 
-    .price {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
+.dish__text{
+    width: 100%;
+}
 
+}
+.dish__subtitle{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.check{
+    display: flex;
+    margin-inline-end: -3rem;
+    gap: 1rem;
 }

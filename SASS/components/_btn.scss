@@ -7,10 +7,17 @@
     color: #fff;
     cursor: pointer;
 
+    &:hover{
+        background: $gradient-color-light;  
+        transition:  1s;
+        transform: scale(115%);
+    }
+
 
     .btn-txt{
-        margin-inline: toRem(12);
+        margin-inline: toRem(16);
 
     }
+
+
 } 
- 

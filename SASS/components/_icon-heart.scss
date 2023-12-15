@@ -1,0 +1,87 @@
+.heart {
+    position: relative;
+    /*margin-top: 5px;
+    margin-left: 20px;*/
+    width: 15%;
+    box-shadow: none;
+  }
+  
+  
+  .heart i {
+    font-size: 1.5rem;
+  }
+  
+  
+  .heart .fa-solid {
+    content: "";
+    position: absolute;
+    color: transparent;
+    background-image: $gradient-color;
+    -webkit-background-clip: text;
+            background-clip: text;
+    opacity: 0;
+    cursor: pointer;
+    transition: 2s;
+    top: 3px;
+    left: 3px;
+  }
+  
+  
+  .heart .fa-solid:hover {
+    opacity: 1;
+  }
+
+
+  .notice {
+    @include flex-center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-inline: toRem(25);
+
+    .notice__title {
+
+        padding-bottom: toRem(26);
+
+    }
+
+    .notice-step {
+        @include flex-center;
+        flex-direction: column;
+        gap: toRem(15);
+        width: 100%;
+
+        .notice-step__process {
+            @include flex-center;
+            justify-content: flex-start;
+            gap: toRem(15);
+            border-radius: toRem(20);
+            height: toRem(70);
+            min-width: 100%;
+            @include shadow-bx;
+            cursor: pointer
+        }
+
+    }
+}
+
+.notice-step__process:hover {
+    color: $primary-color-light;
+    transition: ease-in-out 1s;
+
+
+}
+
+
+.notice-step__nbr {
+    border-radius: toRem(25);
+    background-color: $primary-color;
+    color: #fff;
+    width: toRem(24);
+    height: toRem(24);
+    text-align: center;
+    position: relative;
+    right: toRem(11);
+    @include flex-center;
+}
+
+  
