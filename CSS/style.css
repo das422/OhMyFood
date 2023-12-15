@@ -17,6 +17,7 @@ html {
   max-width: 1440px;
   box-sizing: border-box;
   border: 2px solid red;
+  margin: 0 auto;
 }
 
 h1 {
@@ -111,6 +112,22 @@ header .header__location {
   transform: scale(115%);
 }
 .btn .btn-txt {
+  margin-inline: 1rem;
+}
+
+.btn2 {
+  border-radius: 3.125rem;
+  border: none;
+  height: 49px;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
+  transition: 1s;
+  transform: scale(115%);
+}
+.btn2 .btn-txt {
   margin-inline: 1rem;
 }
 
@@ -322,6 +339,31 @@ button, input, select {
 }
 
 /*fonctionnement*/
+@media (min-width: 768px) {
+  .notice {
+    margin-inline: 1.125rem;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 0.8rem;
+    margin: 0 3.6rem;
+  }
+  .notice .step1 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .notice .step2 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .notice .step3 {
+    grid-column: 6;
+    grid-row: 2;
+  }
+  .notice .notice__title {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
 .notice-btn {
   display: flex;
   align-items: center;
