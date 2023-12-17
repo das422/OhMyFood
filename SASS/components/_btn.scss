@@ -2,7 +2,7 @@
 
     border-radius: toRem(50);
     border:none;
-    height: 49px;
+    height: toRem(50);
     background: $gradient-color;
     color: #fff;
     cursor: pointer;
@@ -24,17 +24,22 @@
 
 .btn2{
 
-    border-radius: toRem(50);
+    border-radius: toRem(18);
     border:none;
-    height: 49px;
+    height: toRem(73);
     background-color: lightgrey;
 
     cursor: pointer;
 
     &:hover{
-        background-color: $gradient-color-light;
-        transition:  1s;
-        transform: scale(115%);
+        background: $gradient-color-light;
+        transition: ease-in-out  0.5s;
+        transform: scale(102%);
+
+    }
+    &:hover{
+        color: white;
+        
     }
 
 
