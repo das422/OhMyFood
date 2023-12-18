@@ -1,42 +1,42 @@
 
 
-
-.img_container{
+.img_container {
     height: clamp(275px, 15vw, 1200px);
     overflow: hidden;
 
-    .img-restaurant{
+    .img-restaurant {
 
-    object-position: 55% 61%;    
+        object-position: 55% 61%;
     }
 
 }
 
 
 .main-content {
-   // @include flex-center;
+    // @include flex-center;
     flex-direction: column;
     gap: 40px;
     @include box-style;
     border: none;
     background-color: #e6e3e3;
-    width:min(100% , 1066px);
+    width: min(100%, 1066px);
     transform: translateY(-3rem);
-    border-radius:3rem;
+    border-radius: 3rem;
     margin: 0 auto;
-
+        position: relative;    
     padding: 1rem;
     display: grid;
 
 
-    .main_title{
+    .main_title {
         @include flex-center;
         gap: 2rem;
 
-    
 
 
-    }
+
+
+
 
 
 }
@@ -46,7 +46,7 @@
 
 
 .dish-container {
-   // @include flex-center; 
+    // @include flex-center; 
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
@@ -54,15 +54,19 @@
 
     display: grid;
 
-    .green-bar{
+
+
+    .green-bar {
         height: 5px;
         width: clamp(4rem, 3vw, 5rem);
-        background-color:$tertiary-color;
+        background-color: $tertiary-color;
         display: block;
     }
 
 
 }
+
+
 
 
 .dish-card {
@@ -72,49 +76,82 @@
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    overflow-x: hidden;
 
 
 }
 
-
-    .checkbox{
-        background-color: green;
-        width: 49px;
-
-        
-    }
-
-
 .dish__content {
-    @include flex-center;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     gap: toRem(5);
     padding-inline: toRem(12);
     margin-bottom: toRem(12);
-    position: relative;
+
     margin-inline: 0.2rem;
     margin-block: 0.8rem;
     width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+
+
+
+
+
+
 
     .card-restaurant__icon {
         @include flex-center;
 
     }
 
-.dish__text{
-    width: 100%;
-}
+    .dish__text {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        overflow: hidden;
+
+    }
 
 }
-.dish__subtitle{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+
+.dish__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 }
 
-.check{
+.dish__subtitle {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.check {
     display: flex;
-    margin-inline-end: -3rem;
+    align-items: flex-end;
+    margin-inline-end: -4rem;
     gap: 1rem;
+
+    .price{
+        padding-block: 0.8rem;
+        font-weight: 500;
+    }
+    .checkbox {
+        background-color: $tertiary-color;
+        height: 100%;
+        position: relative;
+        width: 4rem;
+
+
+    }
+
+
+}
+
+.check:hover{
+    margin-inline: 0rem;
+}
 }

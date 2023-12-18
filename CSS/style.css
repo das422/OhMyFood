@@ -12,12 +12,17 @@ html {
   font-size: 16px;
 }
 
+body {
+  position: relative;
+}
+
 .wrapper {
   padding: 0;
   margin-inline: auto;
   box-sizing: border-box;
   border: 2px solid red;
   margin: 0 auto;
+  position: relative;
 }
 
 h1 {
@@ -96,6 +101,7 @@ header .header__location {
   left: 0.88rem;
   cursor: pointer;
   color: #353535;
+  z-index: 1;
 }
 
 .footer {
@@ -184,6 +190,9 @@ header .header__location {
   content: "\f060";
   font-weight: 900;
   font-size: 30px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
 .location-dot::before {
@@ -247,6 +256,20 @@ header .header__location {
   opacity: 1;
 }
 
+.checkbox::after {
+  content: "\f058";
+  font: var(--fa-font-solid);
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  width: fit-content;
+}
+
 .__new {
   position: absolute;
   color: #008766;
@@ -278,6 +301,7 @@ header .header__location {
   transform: translateY(-3rem);
   border-radius: 3rem;
   margin: 0 auto;
+  position: relative;
   padding: 1rem;
   display: grid;
 }
@@ -287,21 +311,19 @@ header .header__location {
   align-items: center;
   gap: 2rem;
 }
-
-.dish-container {
+.main-content .dish-container {
   align-items: flex-start;
   flex-direction: column;
   gap: 12px;
   display: grid;
 }
-.dish-container .green-bar {
+.main-content .dish-container .green-bar {
   height: 5px;
   width: clamp(4rem, 3vw, 5rem);
   background-color: #99E2D0;
   display: block;
 }
-
-.dish-card {
+.main-content .dish-card {
   border: 2px solid #F6F6F6;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px #AEAEAE;
@@ -310,46 +332,58 @@ header .header__location {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  overflow-x: hidden;
 }
-
-.checkbox {
-  background-color: green;
-  width: 49px;
-}
-
-.dish__content {
+.main-content .dish__content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 0.3125rem;
   padding-inline: 0.75rem;
   margin-bottom: 0.75rem;
-  position: relative;
   margin-inline: 0.2rem;
   margin-block: 0.8rem;
   width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
 }
-.dish__content .card-restaurant__icon {
+.main-content .dish__content .card-restaurant__icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.dish__content .dish__text {
+.main-content .dish__content .dish__text {
   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-
-.dish__subtitle {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+.main-content .dish__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-
-.check {
+.main-content .dish__subtitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main-content .check {
   display: flex;
-  margin-inline-end: -3rem;
+  align-items: flex-end;
+  margin-inline-end: -4rem;
   gap: 1rem;
+}
+.main-content .check .price {
+  padding-block: 0.8rem;
+  font-weight: 500;
+}
+.main-content .check .checkbox {
+  background-color: #99E2D0;
+  height: 100%;
+  position: relative;
+  width: 4rem;
+}
+.main-content .check:hover {
+  margin-inline: 0rem;
 }
 
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, hr, h1, h2, h3, h4, h5, h6 {
@@ -366,6 +400,173 @@ button, input, select {
   box-sizing: inherit;
 }
 
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  border: 16px solid linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-bottom: 16px solid #99E2D0;
+  width: 120px;
+  height: 75px;
+  -webkit-animation: spin 2s ease-in-out infinite;
+  animation: spin delay 2s ease-in-out infinite;
+  animation-duration: 400ms;
+  transform: skew(40%);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+  75% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.2;
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+    opacity: 0.2;
+  }
+  75% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.2;
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+.slide-down {
+  -webkit-animation: scale-down 2s ease-in-out;
+  animation: scale-down 2s ease-in-out;
+}
+.slide-down .slide-down1 {
+  animation-delay: 500ms;
+  height: 0px;
+}
+.slide-down .slide-down2 {
+  animation-delay: 2000ms;
+  height: 0px;
+}
+.slide-down .slide-down3 {
+  animation-delay: 3000ms;
+  height: 0px;
+}
+
+@-webkit-keyframes scale-down {
+  0% {
+    opacity: 0;
+    margin-block-end: -5rem;
+    height: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-block-end: 0rem;
+  }
+}
+@keyframes scale-down {
+  0% {
+    opacity: 0;
+    margin-block-end: -5rem;
+    height: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-block-end: 0rem;
+  }
+}
+/*check*/
+.check:hover {
+  -webkit-animation: slide-rtl 0.4s ease-in-out;
+  animation: slide-rtl 0.4s ease-in-out;
+}
+@keyframes slide-rtl {
+  0% {
+    margin-inline-end: -4rem;
+  }
+  100% {
+    margin-inline-end: 0rem;
+  }
+}
+
+@-webkit-keyframes slide-rtl {
+  0% {
+    margin-inline-end: -4rem;
+  }
+  100% {
+    margin-inline-end: 0rem;
+  }
+}
+.checkbox:hover::after {
+  -webkit-animation: rotate 0.4s linear;
+  animation: rotate 0.4s linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*hero*/
 .hero {
   display: flex;
