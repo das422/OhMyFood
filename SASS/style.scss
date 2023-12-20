@@ -1,4 +1,5 @@
 @import './base/base';
+@import './base/reset';
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/functions';
@@ -8,10 +9,10 @@
 @import './components/icon.scss';
 @import './components/new.scss';
 @import '../SASS/page/restaurants';
-@import './base/reset';
-@import './components/loader';
-@import './utils/animation';
 
+
+@import './utils/animation';
+@import './components/loader';
 //hero//
 /*hero*/
 
@@ -26,19 +27,14 @@
     margin-inline: clamp(0.3rem, 1.5vw, 2rem);
 
     .hero__title {
-
         margin-inline-start: 2.5rem;
         margin-inline-end: 3.5rem;
         margin-bottom: 0.8rem;
-
     }
 
     .hero__subtitle {
-
         margin-bottom: 2rem;
     }
-
-
 }
 
 
@@ -49,16 +45,12 @@
     .notice__title {
         margin-bottom: 2rem;
     }
-
-
 }
 
 .notice_layout {
     @include flex-center;
     flex-direction: column;
     gap: 0.8rem;
-
-
 }
 
 .notice-step__text {
@@ -71,9 +63,7 @@
     flex-direction: row;
     gap: 0.8rem;
     width: 100%;
-
     position: relative;
-
 
     .notice-step__nbr {
         @include circle-step;
@@ -98,8 +88,6 @@
         border-top-right-radius: toRem(15);
 
     }
-
-
 }
 
 .card-restaurant__main-title {
@@ -134,17 +122,15 @@
 //fonctionnement
 /*fonctionnement*/
 
-@media (min-width: 768px) {
-
     .notice {
+        @include media_min-width;
         padding-inline: clamp(1.125rem, -1.7321rem + 14.2857vw, 11.125rem);
         padding-bottom: 5rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-    }
 
-    .notice_layout {
+            .notice_layout {
         display: flex;
         flex-direction: row;
         gap: 2rem;
@@ -168,19 +154,19 @@
             @include circle-step;
         }
     }
+    }
 
-}
+
+
+
 
 //restaurant//
 /*restaurant*/
 .restaurant_container {
+
     padding-inline: clamp(1.125rem, -1.7321rem + 14.2857vw, 11.125rem);
-
-}
-
-@media (min-width: 768px) {
-
     .restaurant_main {
+            @include media_min-width;
         display: grid;
         flex-direction: column;
         gap: toRem(18);
@@ -208,6 +194,11 @@
         }
     }
 
-
-
 }
+
+
+
+
+
+
+

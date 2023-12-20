@@ -74,6 +74,20 @@ img {
   font-size: clamp(0.8rem, 1.5vw + 0.8rem, 1.6rem);
 }
 
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button, input, select {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 /**header**/
 header .__logo {
   height: 3.9375rem;
@@ -386,91 +400,6 @@ header .header__location {
   margin-inline: 0rem;
 }
 
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, hr, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-button, input, select {
-  margin: 0;
-  padding: 0;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-.loader {
-  position: fixed;
-  opacity: 0;
-  top: 50%;
-  left: 50%;
-  z-index: 1000;
-  border: 5px solid linear-gradient(to bottom, #FF79DA, #9356DC 80%);
-  border-radius: 50%;
-  border-top: 10px solid #9356DC;
-  border-right: 20px solid #FF79DA;
-  border-bottom: 30px solid #99E2D0;
-  width: 120px;
-  height: 75px;
-  -webkit-animation: spin ease-in-out infinite;
-  animation: spin delay ease-in-out infinite;
-  animation-duration: 350ms;
-  animation-iteration-count: 5;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    opacity: 1;
-  }
-  75% {
-    -webkit-transform: rotate(0deg);
-    opacity: 1;
-  }
-  25% {
-    -webkit-transform: rotate(90deg);
-    opacity: 0.5;
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-    opacity: 0.2;
-  }
-  0% {
-    -webkit-transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    opacity: 1;
-  }
-  75% {
-    -webkit-transform: rotate(0deg);
-    opacity: 1;
-  }
-  25% {
-    -webkit-transform: rotate(90deg);
-    opacity: 0.5;
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-    opacity: 0.2;
-  }
-  0% {
-    -webkit-transform: rotate(360deg);
-    opacity: 0;
-  }
-}
 .slide-down {
   -webkit-animation: scale-down 1500ms ease-in-out;
   animation: scale-down 1500ms ease-in-out;
@@ -534,6 +463,76 @@ button, input, select {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+.loader {
+  position: fixed;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  border-radius: 50%;
+  border-top: 10px solid #9356DC;
+  border-right: 20px solid #FF79DA;
+  border-bottom: 30px solid #99E2D0;
+  width: 120px;
+  height: 75px;
+  -webkit-animation: spin ease-in-out infinite;
+  animation: spin delay ease-in-out infinite;
+  animation-duration: 350ms;
+  animation-iteration-count: 5;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.2;
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.2;
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
   }
 }
 /*hero*/
@@ -652,22 +651,22 @@ button, input, select {
     flex-direction: column;
     gap: 2rem;
   }
-  .notice_layout {
+  .notice .notice_layout {
     display: flex;
     flex-direction: row;
     gap: 2rem;
   }
-  .notice_layout .notice__title {
+  .notice .notice_layout .notice__title {
     grid-column: 1;
     margin-bottom: 2rem;
   }
-  .notice-btn {
+  .notice .notice-btn {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 0.8rem;
   }
-  .notice-btn .notice-step__nbr {
+  .notice .notice-btn .notice-step__nbr {
     border-radius: 1.5625rem;
     background-color: #9356DC;
     color: #fff;

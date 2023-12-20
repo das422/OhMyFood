@@ -2,3 +2,10 @@ $small:320px;
 $medium:768px;
 $large:1440px;
 
+
+@mixin media_min-width($medium){
+    @media screen and ( min-width: $medium){
+        @content
+    }
+        
+}
