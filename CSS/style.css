@@ -401,34 +401,28 @@ button, input, select {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
+  opacity: 0;
   top: 50%;
   left: 50%;
   z-index: 1000;
-  border: 16px solid linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  border: 5px solid linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   border-radius: 50%;
-  border-top: 16px solid #9356DC;
-  border-right: 16px solid #FF79DA;
-  border-bottom: 16px solid #99E2D0;
+  border-top: 10px solid #9356DC;
+  border-right: 20px solid #FF79DA;
+  border-bottom: 30px solid #99E2D0;
   width: 120px;
   height: 75px;
-  -webkit-animation: spin 2s ease-in-out infinite;
-  animation: spin delay 2s ease-in-out infinite;
-  animation-duration: 400ms;
-  transform: skew(40%);
+  -webkit-animation: spin ease-in-out infinite;
+  animation: spin delay ease-in-out infinite;
+  animation-duration: 350ms;
+  animation-iteration-count: 5;
 }
 
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     opacity: 0;
-  }
-  25% {
-    -webkit-transform: rotate(90deg);
-  }
-  75% {
-    -webkit-transform: rotate(180deg);
-    opacity: 0.5;
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -456,14 +450,6 @@ button, input, select {
     -webkit-transform: rotate(0deg);
     opacity: 0;
   }
-  25% {
-    -webkit-transform: rotate(90deg);
-    opacity: 0.2;
-  }
-  75% {
-    -webkit-transform: rotate(180deg);
-    opacity: 0.5;
-  }
   100% {
     -webkit-transform: rotate(360deg);
     opacity: 1;
@@ -486,42 +472,25 @@ button, input, select {
   }
 }
 .slide-down {
-  -webkit-animation: scale-down 2s ease-in-out;
-  animation: scale-down 2s ease-in-out;
-}
-.slide-down .slide-down1 {
-  animation-delay: 500ms;
-  height: 0px;
-}
-.slide-down .slide-down2 {
-  animation-delay: 2000ms;
-  height: 0px;
-}
-.slide-down .slide-down3 {
-  animation-delay: 3000ms;
-  height: 0px;
+  -webkit-animation: scale-down 1500ms ease-in-out;
+  animation: scale-down 1500ms ease-in-out;
+  animation-iteration-count: 1;
 }
 
 @-webkit-keyframes scale-down {
-  0% {
+  from {
     opacity: 0;
-    margin-block-end: -5rem;
-    height: 0px;
   }
-  100% {
+  to {
     opacity: 1;
-    margin-block-end: 0rem;
   }
 }
 @keyframes scale-down {
-  0% {
+  from {
     opacity: 0;
-    margin-block-end: -5rem;
-    height: 0px;
   }
-  100% {
+  to {
     opacity: 1;
-    margin-block-end: 0rem;
   }
 }
 /*check*/
@@ -553,18 +522,18 @@ button, input, select {
 
 @-webkit-keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 /*hero*/

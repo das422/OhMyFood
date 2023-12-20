@@ -1,58 +1,21 @@
 .slide-down {
 
-    -webkit-animation: scale-down 2s ease-in-out;
-    animation: scale-down 2s ease-in-out;
+    -webkit-animation: scale-down 1500ms ease-in-out;
+    animation: scale-down 1500ms ease-in-out;
+    animation-iteration-count: 1;
 
-    .slide-down1 {
-        animation-delay: 500ms;
-        height: 0px;
 
-    }
-
-    .slide-down2 {
-        animation-delay: 2000ms;
-        height: 0px;
-
-    }
-
-    .slide-down3 {
-        animation-delay: 3000ms;
-        height: 0px;
-
-    }
 }
 
 
 @-webkit-keyframes scale-down {
-    0% {
-        opacity: 0;
-        margin-block-end: -5rem;
-        height: 0px;
-
-    }
-
-
-
-    100% {
-        opacity: 1;
-        margin-block-end: 0rem;
-    }
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 @keyframes scale-down {
-    0% {
-        opacity: 0;
-        margin-block-end: -5rem;
-        height: 0px;
-    }
-
-
-
-
-    100% {
-        opacity: 1;
-        margin-block-end: 0rem;
-    }
+from{opacity: 0;}
+to{opacity: 1;}
 }
 
 
@@ -104,12 +67,12 @@
 @-webkit-keyframes rotate {
     0% {
 
-        transform: rotate(0deg);
+        transform: rotate(180deg);
     }
 
     100% {
 
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -117,11 +80,11 @@
 @keyframes rotate {
     0% {
 
-        transform: rotate(0deg);
+        transform: rotate(180deg);
     }
 
     100% {
 
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 }

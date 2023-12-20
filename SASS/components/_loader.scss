@@ -1,29 +1,31 @@
 .loader {
-    position: absolute;
+    position: fixed;
+    opacity:0;
     top: 50%;
     left: 50%;
     z-index: 1000;
-    border: 16px solid $gradient-color;
+    border: 5px solid $gradient-color;
     border-radius: 50%;
-    border-top: 16px solid $primary-color, ;
-    border-right: 16px solid $secondary-color;
-    border-bottom: 16px solid $tertiary-color;
+    border-top: 10px solid $primary-color, ;
+    border-right: 20px solid $secondary-color;
+    border-bottom: 30px solid $tertiary-color;
     width: 120px;
     height: 75px;
-    -webkit-animation: spin 2s   ease-in-out infinite;
-    animation: spin  delay 2s  ease-in-out infinite ;
-    animation-duration: 400ms;
-    transform: skew(40%);
+    -webkit-animation: spin   ease-in-out infinite;
+    animation: spin  delay   ease-in-out infinite ;
+    animation-duration: 350ms;
+    animation-iteration-count: 5;
+
+
+
   }
   
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg);
-        opacity: 0;  
+        opacity: 0;
+         
     }
-    25% { -webkit-transform: rotate(90deg);
 
-    }
-    75% { -webkit-transform: rotate(180deg);opacity: 0.5; }
     100% { -webkit-transform: rotate(360deg);opacity: 1;}
     75% { -webkit-transform: rotate(0deg);opacity: 1; }
     25% { -webkit-transform: rotate(90deg);opacity: 0.5;}
@@ -34,8 +36,7 @@
   
   @keyframes spin {
     0% { -webkit-transform: rotate(0deg);opacity: 0;  }
-    25% { -webkit-transform: rotate(90deg);opacity: 0.2;}
-    75% { -webkit-transform: rotate(180deg);opacity: 0.5; }
+
     100% { -webkit-transform: rotate(360deg);opacity: 1;}
     75% { -webkit-transform: rotate(0deg);opacity: 1; }
     25% { -webkit-transform: rotate(90deg);opacity: 0.5;}
