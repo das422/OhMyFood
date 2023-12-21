@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"    content="Composez votre propre menu et réduisez votre temps d'attente au restaurant !">
     <title>ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +18,12 @@
 
 
 <body>
-    <div class="loader"></div>
-    <div class="wrapper">
+    <div class="wrapper"></div>
+        <!--loader-->
+    <div class="loader-container">
+        <span class="loader"></span>
+    </div>
+    
 
         <!--header-->
         <header>
@@ -31,7 +37,7 @@
         </header>
 
         <!--homepage-->
-        <section class="hero">
+        <section class="hero appear appear-hero">
             <h2 class=" hero__title">Réservez le menu qui vous convient</h2>
             <p class="hero__subtitle">Découvrez des restaurants d'exception, sélectionnés par vos soins.</p>
             <a href=#restaurants class="btn">
@@ -40,7 +46,7 @@
         </section>
 
         <!--fonctionnement-->
-        <section class="notice">
+        <section class="notice appear appear-notice">
             <h3 class="notice__title">Fonctionnement</h3>
             <div class="notice_layout">
 
@@ -63,7 +69,7 @@
         </section>
 
         <!--main content-->
-        <main id="restaurants" class="restaurant_container">
+        <main id="restaurants" class="restaurant_container  appear appear-restaurant">
             <div class="restaurant_main">
                 <h3 class="card-restaurant__main-title">Restaurants</h3>
                 <div class="card-restaurant grid-item card1">
@@ -136,7 +142,6 @@
                         </div>
                     </a>
                 </div>
-                </a>
             </div>
         </main>
 

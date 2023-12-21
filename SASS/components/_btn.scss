@@ -1,53 +1,54 @@
-.btn{
+.btn {
 
     border-radius: toRem(50);
-    border:none;
+    border: none;
 
     background: $gradient-color;
     color: #fff;
     cursor: pointer;
 
-    &:hover{
-        background: $gradient-color-light;  
-        transition:  1s;
+    &:hover {
+        background: $gradient-color-light;
+        transition: 1s;
         transform: scale(115%);
     }
 
 
-    .btn-txt{
+    .btn-txt {
         margin: 1rem;
         font-weight: 500;
 
     }
 
 
-} 
+}
 
-.btn2{
+.btn2 {
 
     border-radius: toRem(18);
-    border:none;
+    border: none;
     height: toRem(73);
     background-color: lightgrey;
 
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background: $gradient-color-light;
-        transition: ease-in-out  0.5s;
+        transition: ease-in-out 0.5s;
         transform: scale(102%);
 
     }
-    &:hover{
+
+    &:hover {
         color: white;
-        
+
     }
 
 
-    .btn-txt{
+    .btn-txt {
         margin-inline: toRem(16);
 
     }
 
 
-} 
+}

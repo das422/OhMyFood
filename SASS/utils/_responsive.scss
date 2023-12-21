@@ -3,8 +3,8 @@ $medium:768px;
 $large:1440px;
 
 
-@mixin media_min-width($medium){
-    @media screen and ( min-width: $medium){
+@mixin media_min-width($size){
+    @media screen and ( min-width: $size){
         @content
     }
         
