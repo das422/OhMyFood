@@ -1,8 +1,7 @@
 .btn {
 
-    border-radius: toRem(50);
+    border-radius: 3rem;
     border: none;
-
     background: $gradient-color;
     color: #fff;
     cursor: pointer;
@@ -10,9 +9,8 @@
     &:hover {
         background: $gradient-color-light;
         transition: 1s;
-        transform: scale(115%);
+        transform: scale(102%);
     }
-
 
     .btn-txt {
         margin: 1rem;
@@ -52,3 +50,4 @@
 
 
 }
+

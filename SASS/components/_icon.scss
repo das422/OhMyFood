@@ -4,7 +4,6 @@
   font-weight: 900;
   font-size: 30px;
   position: absolute;
-
   top: 1rem;
   left: 1rem;
 }
@@ -42,18 +41,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .handshake::before {
   font: var(--fa-font-solid);
   content: "\f4c4";
@@ -65,16 +52,13 @@
 
 
 
-
+//heart
 .heart i {
   font-size: 1.5rem;
   top: 3px;
   left: 3px;
   position: absolute;
 }
-
-
-
 
 .heart .fa-solid {
   content: "";
@@ -87,11 +71,7 @@
   cursor: pointer;
   transition: ease-in 2s;
 
-
-
-
 }
-
 
 .heart .fa-solid:hover {
   opacity: 1;
@@ -100,8 +80,6 @@
     opacity: 1;
   }
 }
-
-
 
 .checkbox::after {
   content: '\f058';

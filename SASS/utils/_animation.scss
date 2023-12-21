@@ -1,13 +1,13 @@
 .appear{
-    -webkit-animation: appear 2500ms ease-in-out;
-    animation: appear 2500ms ease-in-out;
+    -webkit-animation: fade 2500ms ease-in-out;
+    animation: fade 2500ms ease-in-out;
     animation-iteration-count: 1;
 
 }
 
 
 
-@-webkit-keyframes appear {
+@-webkit-keyframes fade {
     from {
         opacity: 0;
     }

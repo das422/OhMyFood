@@ -3,10 +3,8 @@
     overflow: hidden;
 
     .img-restaurant {
-
         object-position: 55% 61%;
     }
-
 }
 
 .main-content {
@@ -23,34 +21,17 @@
     padding: 1rem;
     display: grid;
 
-
     .main_title {
         @include flex-center;
         gap: 2rem;
-
-
-
-
-
-
-
-
     }
-
-
-
-
 
     .dish-container {
         // @include flex-center; 
         align-items: flex-start;
         flex-direction: column;
         gap: 12px;
-
-
         display: grid;
-
-
 
         .green-bar {
             height: 5px;
@@ -58,12 +39,7 @@
             background-color: $tertiary-color;
             display: block;
         }
-
-
     }
-
-
-
 
     .dish-card {
         @include box-style;
@@ -74,29 +50,20 @@
         justify-content: space-between;
         overflow-x: hidden;
 
-
     }
 
     .dish__content {
         display: flex;
         flex-direction: column;
-        gap: toRem(5);
-        padding-inline: toRem(12);
-        margin-bottom: toRem(12);
-
+        gap: 0.3rem;
+        padding-inline: 0.8rem;
+        margin-bottom: 0.8rem;
         margin-inline: 0.2rem;
         margin-block: 0.8rem;
         width: 100%;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow-x: hidden;
-
-
-
-
-
-
-
 
         .card-restaurant__icon {
             @include flex-center;
@@ -107,7 +74,6 @@
             width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
-
             overflow: hidden;
 
         }
@@ -123,6 +89,7 @@
     .dish__subtitle {
         text-overflow: ellipsis;
         overflow: hidden;
+        font-weight: 300;
     }
 
     .check {
