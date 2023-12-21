@@ -205,3 +205,19 @@
     }
 
 }
+
+@include media_min-width($medium) {
+
+    .footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 2rem;
+
+        .footer__list{
+            flex-direction: row;
+            gap: 1.8rem;
+        }
+    }
+}
