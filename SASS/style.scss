@@ -10,7 +10,7 @@
 @import './components/new.scss';
 @import '../SASS/page/restaurants';
 
-
+@import './utils/responsive';
 @import './utils/animation';
 @import './components/loader';
 //hero//
@@ -38,10 +38,13 @@
 }
 
 
-.notice {
-    margin-inline: 1.125rem;
-    margin-block: 2rem;
+//fonctionnement
+/*fonctionnement media*/
 
+.notice {
+    margin-inline: 0.8rem;
+    margin-block: 2rem;
+        margin-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
     .notice__title {
         margin-bottom: 2rem;
     }
@@ -72,133 +75,133 @@
 
 
 
-.card-restaurant {
-    @include box-style;
-    @include shadow-bx;
-    width: auto;
-    border: none;
-    position: relative;
-    cursor: pointer;
 
-
-    .img {
-        border: none;
-        height: min(124px, 231px);
-        border-top-left-radius: toRem(15);
-        border-top-right-radius: toRem(15);
-
-    }
-}
-
-.card-restaurant__main-title {
-    margin-bottom: 2rem;
-}
-
-.card-restaurant__content {
-    @include flex-center;
-    justify-content: space-between;
-    gap: toRem(5);
-    padding-inline: toRem(12);
-    margin-bottom: toRem(12);
-
-    .heart {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-
-}
-
-.card_restaurant__subtitle {
-    font-weight: 300;
-
-}
 
 .btn-container {
     margin: 0 auto;
 }
 
-//fonctionnement
-/*fonctionnement*/
 
+
+@include media_min-width($medium) {
     .notice {
-        @include media_min-width;
-        padding-inline: clamp(1.125rem, -1.7321rem + 14.2857vw, 11.125rem);
+
+
         padding-bottom: 5rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
 
-            .notice_layout {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
+        .notice_layout {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
 
-        .notice__title {
-            grid-column: 1;
-            margin-bottom: 2rem;
+            .notice__title {
+                grid-column: 1;
+                margin-bottom: 2rem;
+
+            }
 
         }
 
-    }
-
-    .notice-btn {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        gap: 0.8rem;
+        .notice-btn {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 0.8rem;
 
 
-        .notice-step__nbr {
-            @include circle-step;
-        }
-    }
-    }
-
-
-
-
-
-//restaurant//
-/*restaurant*/
-.restaurant_container {
-
-    padding-inline: clamp(1.125rem, -1.7321rem + 14.2857vw, 11.125rem);
-    .restaurant_main {
-            @include media_min-width;
-        display: grid;
-        flex-direction: column;
-        gap: toRem(18);
-        grid-template-columns: auto auto 6rem;
-
-        .card-restaurant__main-title {
-            grid-column: 1;
-            padding-bottom: 2rem;
-        }
-
-        .card1 {
-            grid-column: 1/ span 2;
-        }
-
-        .card2 {
-            grid-column: span 2;
-        }
-
-        .card3 {
-            grid-column: 1/ span 2;
-        }
-
-        .card4 {
-            grid-column: 4 / span 2;
+            .notice-step__nbr {
+                @include circle-step;
+            }
         }
     }
-
 }
 
 
+.restaurant_container {
+
+    padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
+
+    //restaurant//
+    /*restaurant media*/
+
+    .card-restaurant {
+        @include box-style;
+        @include shadow-bx;
+        width: auto;
+        border: none;
+        position: relative;
+        cursor: pointer;
+    
+    
+        .img {
+            border: none;
+            height: min(124px, 231px);
+            border-top-left-radius: toRem(15);
+            border-top-right-radius: toRem(15);
+    
+        }
+    }
+    
+    .card-restaurant__main-title {
+        margin-bottom: 2rem;
+    }
+    
+    .card-restaurant__content {
+        @include flex-center;
+        justify-content: space-between;
+        gap: toRem(5);
+        padding-inline: toRem(12);
+        margin-bottom: toRem(12);
+    
+        .heart {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    
+    }
+    
+    .card_restaurant__subtitle {
+        font-weight: 300;
+    
+    }
+
+    @include media_min-width($medium) {
 
 
+        .restaurant_main {
 
+            display: grid;
+            flex-direction: column;
+            gap: toRem(18);
+            grid-template-columns: auto auto 6rem;
 
+            .card-restaurant__main-title {
+                grid-column: 1;
+                padding-bottom: 2rem;
+            }
 
+            .card1 {
+                grid-column: 1 / span 2;
+            }
+
+            .card2 {
+                grid-column: 4 / span 2;
+            }
+
+            .card3 {
+                grid-column: 1 / span 2;
+            }
+
+            .card4 {
+                grid-column: 4 / span 2;
+            }
+        }
+
+    }
+
+}

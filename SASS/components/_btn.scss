@@ -2,7 +2,7 @@
 
     border-radius: toRem(50);
     border:none;
-    height: toRem(50);
+
     background: $gradient-color;
     color: #fff;
     cursor: pointer;
@@ -15,7 +15,8 @@
 
 
     .btn-txt{
-        margin-inline: toRem(16);
+        margin: 1rem;
+        font-weight: 500;
 
     }
 

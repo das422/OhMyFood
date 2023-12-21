@@ -54,11 +54,13 @@ p {
 a {
   color: inherit;
   text-decoration: none;
-  font-size: clamp(1.3rem, 2vw, 0.8rem);
+  font-size: clamp(1rem, 0.179vw + 0.964rem, 1.125rem);
 }
 
 li {
   list-style-type: none;
+  font-size: clamp(1rem, 0.179vw + 0.964rem, 1.125rem);
+  font-weight: 300;
 }
 
 img {
@@ -166,7 +168,6 @@ header .header__location {
 .btn {
   border-radius: 3.125rem;
   border: none;
-  height: 3.125rem;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   color: #fff;
   cursor: pointer;
@@ -177,7 +178,8 @@ header .header__location {
   transform: scale(115%);
 }
 .btn .btn-txt {
-  margin-inline: 1rem;
+  margin: 1rem;
+  font-weight: 500;
 }
 
 .btn2 {
@@ -555,9 +557,11 @@ header .header__location {
   margin-bottom: 2rem;
 }
 
+/*fonctionnement media*/
 .notice {
-  margin-inline: 1.125rem;
+  margin-inline: 0.8rem;
   margin-block: 2rem;
+  margin-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
 }
 .notice .notice__title {
   margin-bottom: 2rem;
@@ -597,55 +601,12 @@ header .header__location {
   align-items: center;
 }
 
-.card-restaurant {
-  border: 2px solid #F6F6F6;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px #AEAEAE;
-  background-color: #F6F6F6;
-  width: auto;
-  border: none;
-  position: relative;
-  cursor: pointer;
-}
-.card-restaurant .img {
-  border: none;
-  height: 124px;
-  border-top-left-radius: 0.9375rem;
-  border-top-right-radius: 0.9375rem;
-}
-
-.card-restaurant__main-title {
-  margin-bottom: 2rem;
-}
-
-.card-restaurant__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.3125rem;
-  padding-inline: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-.card-restaurant__content .heart {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.card_restaurant__subtitle {
-  font-weight: 300;
-}
-
 .btn-container {
   margin: 0 auto;
 }
 
-/*fonctionnement*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .notice {
-    padding-inline: clamp(1.125rem, -1.7321rem + 14.2857vw, 11.125rem);
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -680,32 +641,68 @@ header .header__location {
     align-items: center;
   }
 }
-/*restaurant*/
 .restaurant_container {
-  padding-inline: clamp(1.125rem, -1.7321rem + 14.2857vw, 11.125rem);
+  padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
+  /*restaurant media*/
 }
-
-@media (min-width: 768px) {
-  .restaurant_main {
+.restaurant_container .card-restaurant {
+  border: 2px solid #F6F6F6;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px #AEAEAE;
+  background-color: #F6F6F6;
+  width: auto;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.restaurant_container .card-restaurant .img {
+  border: none;
+  height: 124px;
+  border-top-left-radius: 0.9375rem;
+  border-top-right-radius: 0.9375rem;
+}
+.restaurant_container .card-restaurant__main-title {
+  margin-bottom: 2rem;
+}
+.restaurant_container .card-restaurant__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3125rem;
+  padding-inline: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.restaurant_container .card-restaurant__content .heart {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.restaurant_container .card_restaurant__subtitle {
+  font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  .restaurant_container .restaurant_main {
     display: grid;
     flex-direction: column;
     gap: 1.125rem;
     grid-template-columns: auto auto 6rem;
   }
-  .restaurant_main .card-restaurant__main-title {
+  .restaurant_container .restaurant_main .card-restaurant__main-title {
     grid-column: 1;
     padding-bottom: 2rem;
   }
-  .restaurant_main .card1 {
+  .restaurant_container .restaurant_main .card1 {
     grid-column: 1/span 2;
   }
-  .restaurant_main .card2 {
-    grid-column: span 2;
+  .restaurant_container .restaurant_main .card2 {
+    grid-column: 4/span 2;
   }
-  .restaurant_main .card3 {
+  .restaurant_container .restaurant_main .card3 {
     grid-column: 1/span 2;
   }
-  .restaurant_main .card4 {
+  .restaurant_container .restaurant_main .card4 {
     grid-column: 4/span 2;
   }
 }/*# sourceMappingURL=style.css.map */
