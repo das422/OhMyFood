@@ -17,12 +17,10 @@ body {
 }
 
 .wrapper {
-  padding: 0;
-  margin-inline: auto;
-  box-sizing: border-box;
-  border: 2px solid red;
+  padding: auto;
   margin: 0 auto;
   position: relative;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -334,17 +332,27 @@ header .arrow {
   padding: 1rem;
   display: grid;
 }
-.main-content .main_title {
+.main-content .main_title--layout {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.main-content .heart {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 .main-content .dish-container {
   align-items: flex-start;
   flex-direction: column;
   gap: 12px;
   display: grid;
+}
+.main-content .dish-container .course-title {
+  font-weight: 300;
 }
 .main-content .dish-container .green-bar {
   height: 5px;
@@ -414,12 +422,6 @@ header .arrow {
 }
 .main-content .check:hover {
   margin-inline: 0rem;
-}
-
-.btn3 {
-  width: max-content;
-  align-items: center;
-  justify-content: center;
 }
 
 .appear {
