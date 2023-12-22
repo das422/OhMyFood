@@ -22,11 +22,11 @@
 
 .btn2 {
 
-    border-radius: toRem(18);
+@include shadow-bx;
+    background-color:$background;
+    height: 4.6rem;    
+    border-radius: 1.2rem;
     border: none;
-    height: toRem(73);
-    background-color: lightgrey;
-
     cursor: pointer;
 
     &:hover {
@@ -43,7 +43,7 @@
 
 
     .btn-txt {
-        margin-inline: toRem(16);
+        margin-inline: 1rem;
 
     }
 

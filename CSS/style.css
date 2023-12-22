@@ -193,10 +193,12 @@ header .arrow {
 }
 
 .btn2 {
-  border-radius: 1.125rem;
+  box-shadow: 0px 4px 15px 0px #AEAEAE;
+  background-color: #F6F6F6;
+  background-color: #EAEAEA;
+  height: 4.6rem;
+  border-radius: 1.2rem;
   border: none;
-  height: 4.5625rem;
-  background-color: lightgrey;
   cursor: pointer;
 }
 .btn2:hover {
@@ -601,6 +603,7 @@ header .arrow {
 
 .bg {
   background-color: #fff;
+  padding-block: 1rem;
 }
 
 .notice_layout {
@@ -609,6 +612,10 @@ header .arrow {
   align-items: center;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.notice__title {
+  margin-bottom: 1.2rem;
 }
 
 .notice-step__text {
@@ -679,7 +686,7 @@ header .arrow {
 /*restaurant*/
 .restaurant_container {
   padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
-  margin-bottom: 3rem;
+  margin-block: 3rem;
 }
 .restaurant_container .card-restaurant {
   border: 2px solid #F6F6F6;

@@ -48,19 +48,18 @@
 
 .bg{
     background-color:#fff;
+    padding-block: 1rem;
 
 }
-
-
-
-
-
-
 
 .notice_layout {
     @include flex-center;
     flex-direction: column;
     gap: 0.8rem;
+}
+
+.notice__title{
+    margin-bottom: 1.2rem;
 }
 
 .notice-step__text {
@@ -127,7 +126,7 @@
 .restaurant_container {
 
     padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
-    margin-bottom: 3rem;
+    margin-block: 3rem;
 
     .card-restaurant {
         @include box-style;
