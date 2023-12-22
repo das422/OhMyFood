@@ -587,6 +587,11 @@ header .arrow {
   margin-block: 2rem;
   margin-inline: clamp(0.8rem, -4.7321rem + 14.2857vw, 11.125rem);
   background-color: #fff;
+  position: relative;
+}
+
+.bg {
+  background-color: #fff;
 }
 
 .notice_layout {
@@ -629,7 +634,6 @@ header .arrow {
 
 @media screen and (min-width: 768px) {
   .notice {
-    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;

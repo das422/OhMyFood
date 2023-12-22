@@ -40,9 +40,21 @@
 .notice {
     margin-block: 2rem;
     margin-inline: clamp(0.8rem, -4.7321rem + 14.2857vw, 11.125rem);
-    background-color: #fff
-    
+    background-color: #fff;
+    position:relative;
+
 }
+
+.bg{
+    background-color:#fff;
+
+}
+
+
+
+
+
+
 
 .notice_layout {
     @include flex-center;
@@ -75,7 +87,7 @@
 @include media_min-width($medium) {
     .notice {
 
-        padding-bottom: 5rem;
+
         display: flex;
         flex-direction: column;
         gap: 2rem;
