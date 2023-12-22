@@ -23,9 +23,11 @@
 //menu-card appear(restaurant-page)
 .slide-down {
 
-    -webkit-animation: fade 1500ms ease-in-out;
-    animation: fade 1500ms ease-in-out;
+    -webkit-animation: fade 1500ms ease-in-out forwards;
+    animation: fade 1500ms ease-in-out forwards;
     animation-iteration-count: 1;
+    transform-origin: left;
+
 }
 
 @-webkit-keyframes fade {

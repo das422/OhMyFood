@@ -7,7 +7,7 @@
 
     &:hover {
         background: $gradient-color-light;
-        transition: 0.5s;
+        transition: 1s;
         transform: scale(102%);
     }
 
@@ -31,7 +31,7 @@
 
     &:hover {
         background: $gradient-color-light;
-        transition: ease-in-out 0.5s;
+        transition: linear 0.5s;
         transform: scale(102%);
 
     }

@@ -184,8 +184,8 @@ header .arrow {
 }
 .btn:hover {
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-  transition: 0.5s;
-  transform: scale(102%);
+  transition: linear 0.4s;
+  transform: scale(1.1);
 }
 .btn .btn-txt {
   margin: 1rem;
@@ -201,7 +201,7 @@ header .arrow {
 }
 .btn2:hover {
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-  transition: ease-in-out 0.5s;
+  transition: linear 0.5s;
   transform: scale(102%);
 }
 .btn2:hover {
@@ -414,6 +414,12 @@ header .arrow {
   margin-inline: 0rem;
 }
 
+.btn3 {
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+}
+
 .appear {
   -webkit-animation: fade 2500ms ease-in-out;
   animation: fade 2500ms ease-in-out;
@@ -429,9 +435,10 @@ header .arrow {
   }
 }
 .slide-down {
-  -webkit-animation: fade 1500ms ease-in-out;
-  animation: fade 1500ms ease-in-out;
+  -webkit-animation: fade 1500ms ease-in-out forwards;
+  animation: fade 1500ms ease-in-out forwards;
   animation-iteration-count: 1;
+  transform-origin: left;
 }
 
 @-webkit-keyframes fade {
@@ -594,7 +601,7 @@ header .arrow {
 
 .bg {
   background-color: #fff;
-  padding-block: 1rem;
+  padding: 0.8rem;
 }
 
 .notice_layout {
@@ -673,7 +680,11 @@ header .arrow {
 /*restaurant*/
 .restaurant_container {
   padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
-  margin-block: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.restaurant_container .card-restaurant__main-title {
+  margin-bottom: 0.8rem;
 }
 .restaurant_container .card-restaurant {
   border: 2px solid #F6F6F6;
