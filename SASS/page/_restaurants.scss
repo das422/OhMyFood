@@ -8,18 +8,17 @@
 }
 
 .main-content {
-    flex-direction: column;
-    gap: 40px;
-    @include box-style;
-    border: none;
-    background-color: #e6e3e3;
-    width: min(100%, 1066px);
-    transform: translateY(-3rem);
-    border-radius: 3rem;
-    margin: 0 auto;
+    display: grid;    
     position: relative;
+    background-color: #e6e3e3;
+    width: min(100%, 1066px);    
+    @include box-style;
     padding: 1rem;
-    display: grid;
+    margin: 0 auto;
+    gap: 40px;
+    border: none;
+    border-radius: 3rem;
+    transform: translateY(-3rem);
 
     .main_title--layout {
         position: relative;
@@ -35,21 +34,18 @@
     }
 
     .dish-container {
-        // @include flex-center; 
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 12px;
         display: grid;
+        gap: 12px;
 
         .course-title{
             font-weight: 300;
         }
 
         .green-bar {
+            display: block;
+            background-color: $tertiary-color;            
             height: 5px;
             width: clamp(4rem, 3vw, 5rem);
-            background-color: $tertiary-color;
-            display: block;
         }
     }
 

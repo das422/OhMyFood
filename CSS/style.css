@@ -211,6 +211,15 @@ header .arrow {
   margin-inline: 1rem;
 }
 
+.btn_layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_layout .btn3 {
+  padding-inline: 1rem;
+}
+
 .arrow::before {
   font: var(--fa-font-solid);
   content: "\f060";
@@ -318,19 +327,18 @@ header .arrow {
 }
 
 .main-content {
-  flex-direction: column;
-  gap: 40px;
-  border: 2px solid #F6F6F6;
-  border-radius: 15px;
-  border: none;
+  display: grid;
+  position: relative;
   background-color: #e6e3e3;
   width: min(100%, 1066px);
-  transform: translateY(-3rem);
-  border-radius: 3rem;
-  margin: 0 auto;
-  position: relative;
+  border: 2px solid #F6F6F6;
+  border-radius: 15px;
   padding: 1rem;
-  display: grid;
+  margin: 0 auto;
+  gap: 40px;
+  border: none;
+  border-radius: 3rem;
+  transform: translateY(-3rem);
 }
 .main-content .main_title--layout {
   position: relative;
@@ -346,19 +354,17 @@ header .arrow {
   cursor: pointer;
 }
 .main-content .dish-container {
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 12px;
   display: grid;
+  gap: 12px;
 }
 .main-content .dish-container .course-title {
   font-weight: 300;
 }
 .main-content .dish-container .green-bar {
+  display: block;
+  background-color: #99E2D0;
   height: 5px;
   width: clamp(4rem, 3vw, 5rem);
-  background-color: #99E2D0;
-  display: block;
 }
 .main-content .dish-card {
   border: 2px solid #F6F6F6;
