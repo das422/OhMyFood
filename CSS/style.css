@@ -184,8 +184,8 @@ header .arrow {
 }
 .btn:hover {
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-  transition: linear 0.4s;
-  transform: scale(1.1);
+  transition: 1s;
+  transform: scale(102%);
 }
 .btn .btn-txt {
   margin: 1rem;
@@ -601,7 +601,6 @@ header .arrow {
 
 .bg {
   background-color: #fff;
-  padding: 0.8rem;
 }
 
 .notice_layout {
@@ -681,10 +680,6 @@ header .arrow {
 .restaurant_container {
   padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
   margin-bottom: 3rem;
-  margin-top: 3rem;
-}
-.restaurant_container .card-restaurant__main-title {
-  margin-bottom: 0.8rem;
 }
 .restaurant_container .card-restaurant {
   border: 2px solid #F6F6F6;
