@@ -47,6 +47,8 @@
 
 .bg{
     background-color:#fff;
+    padding: 0.8rem;
+
 
 }
 
@@ -126,6 +128,11 @@
 .restaurant_container {
     padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
     margin-bottom: 3rem;
+    margin-top: 3rem;
+
+    .card-restaurant__main-title{
+        margin-bottom:0.8rem;
+    }
 
     .card-restaurant {
         @include box-style;
@@ -173,7 +180,7 @@
 
             .card-restaurant__main-title {
                 grid-column: 1;
-                padding-bottom: 2rem;
+
             }
 
             .card1 {

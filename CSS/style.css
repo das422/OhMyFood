@@ -592,6 +592,7 @@ header .arrow {
 
 .bg {
   background-color: #fff;
+  padding: 0.8rem;
 }
 
 .notice_layout {
@@ -671,6 +672,10 @@ header .arrow {
 .restaurant_container {
   padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
   margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.restaurant_container .card-restaurant__main-title {
+  margin-bottom: 0.8rem;
 }
 .restaurant_container .card-restaurant {
   border: 2px solid #F6F6F6;
@@ -715,7 +720,6 @@ header .arrow {
   }
   .restaurant_container .restaurant_main .card-restaurant__main-title {
     grid-column: 1;
-    padding-bottom: 2rem;
   }
   .restaurant_container .restaurant_main .card1 {
     grid-column: 1/span 2;
