@@ -8,8 +8,8 @@
 
     &:hover {
         background: $gradient-color-light;
-        transition: 1s;
-        transform: scale(102%);
+        transition: linear 0.4s ;
+        transform: scale(1.1);
     }
 
     .btn-txt {
@@ -32,7 +32,7 @@
 
     &:hover {
         background: $gradient-color-light;
-        transition: ease-in-out 0.5s;
+        transition: linear 0.5s;
         transform: scale(102%);
 
     }
