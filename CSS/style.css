@@ -175,15 +175,16 @@ header .arrow {
 }
 
 .btn {
-  border-radius: 3rem;
-  border: none;
+  box-shadow: 0px 4px 15px 0px #AEAEAE;
+  background-color: #F6F6F6;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  border-radius: 3rem;
   color: #fff;
   cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-  transition: 1s;
+  transition: 0.5s;
   transform: scale(102%);
 }
 .btn .btn-txt {
@@ -580,6 +581,7 @@ header .arrow {
 }
 .hero .hero__subtitle {
   margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 /*fonctionnement*/
@@ -592,6 +594,7 @@ header .arrow {
 
 .bg {
   background-color: #fff;
+  padding-block: 1rem;
 }
 
 .notice_layout {
@@ -670,7 +673,7 @@ header .arrow {
 /*restaurant*/
 .restaurant_container {
   padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
-  margin-bottom: 3rem;
+  margin-block: 3rem;
 }
 .restaurant_container .card-restaurant {
   border: 2px solid #F6F6F6;
@@ -703,6 +706,9 @@ header .arrow {
   height: 30px;
   cursor: pointer;
 }
+.restaurant_container .card-restaurant__main-title {
+  margin-bottom: 1.2rem;
+}
 .restaurant_container .card_restaurant__subtitle {
   font-weight: 300;
 }
@@ -715,7 +721,6 @@ header .arrow {
   }
   .restaurant_container .restaurant_main .card-restaurant__main-title {
     grid-column: 1;
-    padding-bottom: 2rem;
   }
   .restaurant_container .restaurant_main .card1 {
     grid-column: 1/span 2;

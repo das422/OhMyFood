@@ -31,6 +31,7 @@
 
     .hero__subtitle {
         margin-bottom: 2rem;
+        font-weight: 300;
     }
 }
 
@@ -41,12 +42,13 @@
     margin-block: 2rem;
     margin-inline: clamp(0.8rem, -4.7321rem + 14.2857vw, 11.125rem);
     background-color: #fff;
-    position:relative;
+    position: relative;
 
 }
 
-.bg{
-    background-color:#fff;
+.bg {
+    background-color: #fff;
+    padding-block: 1rem;
 
 }
 
@@ -124,8 +126,9 @@
 /*restaurant*/
 
 .restaurant_container {
+
     padding-inline: clamp(1.125rem, -4.7321rem + 14.2857vw, 11.125rem);
-    margin-bottom: 3rem;
+    margin-block: 3rem;
 
     .card-restaurant {
         @include box-style;
@@ -159,6 +162,11 @@
 
     }
 
+    .card-restaurant__main-title {
+        margin-bottom: 1.2rem;
+
+    }
+
     .card_restaurant__subtitle {
         font-weight: 300;
     }
@@ -171,9 +179,10 @@
             row-gap: 1.2rem;
             grid-template-columns: auto auto 6rem;
 
+
             .card-restaurant__main-title {
                 grid-column: 1;
-                padding-bottom: 2rem;
+
             }
 
             .card1 {

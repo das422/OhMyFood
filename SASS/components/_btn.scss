@@ -1,14 +1,13 @@
 .btn {
-
-    border-radius: 3rem;
-    border: none;
+    @include shadow-bx;
     background: $gradient-color;
+    border-radius: 3rem;
     color: #fff;
     cursor: pointer;
 
     &:hover {
         background: $gradient-color-light;
-        transition: 1s;
+        transition: 0.5s;
         transform: scale(102%);
     }
 
