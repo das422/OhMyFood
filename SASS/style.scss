@@ -143,6 +143,10 @@
             border-top-right-radius: 1rem;
         }
     }
+    .restaurant_main{
+        display: grid;
+        row-gap: 1.2rem;
+    }
 
     .card-restaurant__content {
         @include flex-center;

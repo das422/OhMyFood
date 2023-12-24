@@ -712,6 +712,10 @@ header .arrow {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+.restaurant_container .restaurant_main {
+  display: grid;
+  row-gap: 1.2rem;
+}
 .restaurant_container .card-restaurant__content {
   display: flex;
   justify-content: center;
