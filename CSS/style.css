@@ -513,11 +513,11 @@ header .arrow {
 .loader {
   position: fixed;
   opacity: 0;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 40%;
   width: 120px;
   height: 75px;
-  z-index: 1000;
+  z-index: 9999;
   border-radius: 50%;
   border-top: 10px solid #9356DC;
   border-right: 20px solid #FF79DA;
@@ -526,6 +526,7 @@ header .arrow {
   animation: spin delay ease-in-out infinite;
   animation-duration: 350ms;
   animation-iteration-count: 5;
+  transform: translate(50%, -50%);
 }
 
 @-webkit-keyframes spin {
